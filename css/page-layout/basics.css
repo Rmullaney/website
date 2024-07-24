@@ -1,3 +1,7 @@
 .center { /* Test for aligning header to the center of the screen */
     text-align: center;
 } 
+
+body {
+    background-color: aqua;
+}
