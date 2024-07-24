@@ -2,6 +2,14 @@
     text-align: center;
 } 
 
-.aqua {
+.aqua { /* Test for colors and stuff */
     background-color: aqua;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Defines direction of flex items */
+    justify-content: center; /* Center flex items horizontally */
+    align-items: center; /* Center flex items vertically */
+    background-color: cornflowerblue;
 }
