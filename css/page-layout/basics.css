@@ -19,12 +19,12 @@
 }
 
 img {
-    height: 20vh;
-    width: 20vw;
+    height: 40vh;
+    width: 25vw;
 }
 
 body {
-    background-image: linear-gradient(to bottom, #42f5a1, #429ef5);
+    background-image: linear-gradient(to bottom, #f5ce7a, #429ef5);
 }
 
 .container {
