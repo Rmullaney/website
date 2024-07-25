@@ -14,11 +14,11 @@ class Navigation extends HTMLElement {
                     justify-content: flex-end;
                 }
                 a {
-                    width: 20vw;
+                    width: 10vw;
                     height: 20vh;
                     text-decoration: none;
                     font-weight: bold;
-                    color: #1983e6;
+                    color: white;
                 }
             </style>
             <nav>
