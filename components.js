@@ -6,15 +6,18 @@ class Navigation extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <style>
-                .component {
-                    background-color: darkred
+                nav {
+                    background-color: darkred;
+                }
+                a {
+                    background-color grey: 
                 }
             </style>
-            <header class="component">
-                <p>
-                    testing navbar custom element
-                </p>
-            </header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+            </nav>
+
         
         `;
     }
