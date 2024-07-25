@@ -32,18 +32,18 @@ img {
     display: flex;
     flex-direction: column; /* Defines direction of flex items */
     justify-content: space-evenly; /* Center flex items horizontally */
-    align-items: center; /* Center flex items vertically */
+    align-items: flex-start; /* Center flex items vertically */
     height: 100vh; /* Makes it so that the flex container takes up 100 percent of the vh (viewport) height */
-    border-width: 20px;
+    /*border-width: 20px;
     border-color: white;
-    border-style: solid;
+    border-style: solid;*/ /* Debugging borders */
 }
 
 .home-page-below-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border-width: 4vw;
+    /* border-width: 4vw;
     border-color: black;
-    border-style: solid;
+    border-style: solid; */ /* Debugging borders */
 }
