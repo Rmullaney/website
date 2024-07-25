@@ -7,7 +7,8 @@ class Navigation extends HTMLElement {
         this.innerHTML = `
             <style>
                 nav {
-                    height: 10vh;
+                    height: 20vh;
+                    align-items: end;
                 }
                 a {
                     width: 15vw;
@@ -19,8 +20,6 @@ class Navigation extends HTMLElement {
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
             </nav>
-
-        
         `;
     }
 }
