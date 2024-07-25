@@ -20,4 +20,4 @@ class Navigation extends HTMLElement {
     }
 }
 
-customElements.define('nav-bar', Navigation)
+customElements.define('nav-bar', Navigation);
