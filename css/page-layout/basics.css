@@ -14,6 +14,10 @@
     background-color: rgb(110, 198, 86);
 }
 
+body {
+    background-image: linear-gradient(to bottom, #42f5a1, #429ef5);
+}
+
 .container {
     display: flex;
     flex-direction: column; /* Defines direction of flex items */
