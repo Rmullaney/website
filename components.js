@@ -7,14 +7,15 @@ class Navigation extends HTMLElement {
         this.innerHTML = `
             <style>
                 nav {
-                    background-color: darkred;
+                    background-color: gray;
+                    height: 10vh;
                     width: 100vw;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-evenly;
                 }
                 a {
-                    background-color grey: 
+                    background-color gray: 
                     width: 30vw
                 }
             </style>
