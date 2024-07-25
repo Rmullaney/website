@@ -21,7 +21,7 @@
 img {
     height: 45vh;
     width: 20vw;
-    border-radius: 10;
+    border-radius: 10vw;
 }
 
 .gradient {
@@ -40,6 +40,6 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border-width: 3;
+    border-width: 3px;
     border-color: black
 }
