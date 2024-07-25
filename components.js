@@ -8,6 +8,7 @@ class Navigation extends HTMLElement {
             <style>
                 nav {
                     height: 5vh;
+                    border-bottom: black
                 }
                 .options {
                     display: flex;
