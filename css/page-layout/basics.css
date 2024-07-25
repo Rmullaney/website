@@ -12,7 +12,15 @@
 
 .green {
     background-color: rgb(110, 198, 86);
-    
+}
+
+.home-page-text {
+    color: #1b0aad;
+}
+
+img {
+    height: 20vh;
+    width: 20vw;
 }
 
 body {
