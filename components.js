@@ -8,17 +8,24 @@ class Navigation extends HTMLElement {
             <style>
                 nav {
                     height: 20vh;
-                    align-items: end;
+                }
+                .options {
+                    display: flex;
+                    justify-content: flex-end;
                 }
                 a {
-                    width: 15vw;
+                    width: 20vw;
+                    height: 20vh;
                     text-decoration: none;
                     font-weight: bold;
+                    color: #1983e6;
                 }
             </style>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
+                <div class="options">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                </div>
             </nav>
         `;
     }
