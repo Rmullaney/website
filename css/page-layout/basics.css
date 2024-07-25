@@ -34,12 +34,14 @@ img {
     justify-content: space-evenly; /* Center flex items horizontally */
     align-items: center; /* Center flex items vertically */
     height: 100vh; /* Makes it so that the flex container takes up 100 percent of the vh (viewport) height */
+    border-width: 20px;
+    border-color: white;
 }
 
 .home-page-below-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border-width: 3px;
+    border-width: 4vw;
     border-color: black
 }
