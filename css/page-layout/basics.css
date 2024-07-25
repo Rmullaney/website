@@ -36,6 +36,7 @@ img {
     height: 100vh; /* Makes it so that the flex container takes up 100 percent of the vh (viewport) height */
     border-width: 20px;
     border-color: white;
+    border-style: solid;
 }
 
 .home-page-below-nav {
@@ -43,5 +44,6 @@ img {
     flex-direction: row;
     justify-content: space-evenly;
     border-width: 4vw;
-    border-color: black
+    border-color: black;
+    border-style: solid;
 }
