@@ -10,7 +10,7 @@ class Navigation extends HTMLElement {
                     background-color: darkred
                 }
             </style>
-            <header>
+            <header class="component">
                 <p>
                     testing navbar custom element
                 </p>
