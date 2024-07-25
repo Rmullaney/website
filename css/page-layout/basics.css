@@ -23,7 +23,7 @@ img {
     width: 20vw;
 }
 
-body {
+.gradient {
     background-image: linear-gradient(to bottom, #f5ce7a, #429ef5);
 }
 
@@ -37,5 +37,6 @@ body {
 
 .home-page-below-nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
 }
