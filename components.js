@@ -7,7 +7,7 @@ class Navigation extends HTMLElement {
         this.innerHTML = `
             <style>
                 nav {
-                    height: 10vh;
+                    height: 5vh;
                 }
                 .options {
                     display: flex;
@@ -16,7 +16,7 @@ class Navigation extends HTMLElement {
                 }
                 a {
                     width: 10vw;
-                    height: 20vh;
+                    height: 5vh;
                     text-decoration: none;
                     font-weight: bold;
                     color: #1b0aad;
