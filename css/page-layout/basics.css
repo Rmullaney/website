@@ -44,7 +44,8 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border-width: 4vw;
+    width: 100vw;
+    /* border-width: 4vw;
     border-color: black;
-    border-style: solid; /* Debugging borders */
+    border-style: solid; Debugging borders */
 }
