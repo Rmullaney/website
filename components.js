@@ -11,11 +11,17 @@ class Navigation extends HTMLElement {
                     border-style: solid;
                     border-width: 3vw;
                     border-color: black;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: space-evenly;
                 }
                 .options {
                     display: flex;
                     justify-content: flex-end;
-                    align-items: flex-end;
+                    align-items: space-evenly;
+                    border-style: solid;
+                    border-width: 2vw;
+                    border-color: white;
                 }
                 a {
                     width: 10vw;
