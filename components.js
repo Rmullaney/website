@@ -7,8 +7,7 @@ class Navigation extends HTMLElement {
         this.innerHTML = `
             <style>
                 nav {
-                    height: 5vh;
-                    border-bottom: black
+                    height: 10vh;
                 }
                 .options {
                     display: flex;
