@@ -8,6 +8,9 @@ class Navigation extends HTMLElement {
             <style>
                 nav {
                     height: 10vh;
+                    border-style: solid;
+                    border-width: 3vw;
+                    border-color: black;
                 }
                 .options {
                     display: flex;
