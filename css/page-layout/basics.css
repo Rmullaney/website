@@ -36,6 +36,7 @@ img {
     align-items: flex-start; /* Center flex items vertically */
     height: 100vh; /* Makes it so that the flex container takes up 100 percent of the vh (viewport) height */
     width: 100vw;
+    margin-top: 5vh;
     /* border-width: 1vw;
     border-color: white;
     border-style: solid;  */
