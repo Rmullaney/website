@@ -24,6 +24,9 @@ class Navigation extends HTMLElement {
                     display: flex;
                     justify-content: flex-end;
                     align-items: space-evenly;
+                    border-style: solid;
+                    border-width: 1vw;
+                    border-color: black;
                 }
                 .options {
                     display: flex;
