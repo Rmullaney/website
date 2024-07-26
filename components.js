@@ -3,14 +3,24 @@ class Navigation extends HTMLElement {
         super();
     }
 
+    /* Debug Borders
+
+                    border-style: solid;
+                    border-width: 3vw;
+                    border-color: black;
+
+                    border-style: solid;
+                    border-width: 2vw;
+                    border-color: white;
+
+    */
+
     connectedCallback() {
         this.innerHTML = `
             <style>
                 nav {
                     height: 10vh;
-                    border-style: solid;
-                    border-width: 3vw;
-                    border-color: black;
+                    width: 100vw;
                     display: flex;
                     justify-content: flex-end;
                     align-items: space-evenly;
@@ -19,9 +29,7 @@ class Navigation extends HTMLElement {
                     display: flex;
                     justify-content: flex-end;
                     align-items: space-evenly;
-                    border-style: solid;
-                    border-width: 2vw;
-                    border-color: white;
+                    width: 25vw;
                 }
                 a {
                     width: 10vw;
