@@ -31,8 +31,11 @@ class Navigation extends HTMLElement {
                 .options {
                     display: flex;
                     justify-content: flex-end;
-                    align-items: space-evenly;
+                    align-items: center;
                     width: 25vw;
+                    border-style: solid;
+                    border-width: 1vw;
+                    border-color: white;
                 }
                 a {
                     width: 10vw;
