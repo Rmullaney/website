@@ -36,9 +36,9 @@ img {
     align-items: flex-start; /* Center flex items vertically */
     height: 100vh; /* Makes it so that the flex container takes up 100 percent of the vh (viewport) height */
     width: 100vw;
-    border-width: 1vw;
+    /* border-width: 1vw;
     border-color: white;
-    border-style: solid; /* Debugging borders */
+    border-style: solid;  */
 }
 
 .home-page-below-nav {
@@ -46,7 +46,7 @@ img {
     flex-direction: row;
     justify-content: space-evenly;
     width: 100vw;
-    border-width: 1vw;
+    /* border-width: 1vw;
     border-color: black;
-    border-style: solid; 
+    border-style: solid;  */
 }
