@@ -54,9 +54,9 @@ class Navigation extends HTMLElement {
                     font-weight: bold;
                 }
                 img {
-                    width: 4vw;
+                    width: 2vw;
                     height: 3vh;
-                    border-radius: 2vw;
+                    border-radius: 1vw;
                 }
             </style>
             <nav>
