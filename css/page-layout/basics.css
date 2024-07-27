@@ -1,6 +1,6 @@
-.center { /* Test for aligning header to the center of the screen */
-    text-align: center;
-} 
+.experience-page-body {
+    height: 100vh;
+}
 
 .aqua { /* Test for colors and stuff */
     background-color: aqua;
