@@ -25,11 +25,17 @@ class Navigation extends HTMLElement {
                     justify-content: flex-end;
                     align-items: space-evenly;
                 }
-                .options {
+                .nav-options {
                     display: flex;
                     justify-content: flex-end;
                     align-items: center;
                     width: 25vw;
+                }
+                .logo-and-media {
+                    display: flex;
+                    width: 25vw;
+                    justify-content: flex-start;
+                    align-items: center;
                 }
                 a {
                     width: 10vw;
@@ -40,9 +46,14 @@ class Navigation extends HTMLElement {
                 }
             </style>
             <nav>
-                <div class="options">
+                <div class="logo-and-media">
+                    testing spacing
+                </div>
+                <div class="nav-options"></div>
+                <div class="nav-options"></div>
+                <div class="nav-options">
                     <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
+                    <a href="experience.html">Experience</a>
                 </div>
             </nav>
         `;
