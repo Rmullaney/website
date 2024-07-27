@@ -53,11 +53,16 @@ class Navigation extends HTMLElement {
                     height: 5vh;
                     font-weight: bold;
                 }
+                img {
+                    width: 10vw;
+                    height: 10vh;
+                    border-radius: 5vw;
+                }
             </style>
             <nav>
                 <div class="logo-and-media">
                     <p> Ronan Mullaney </p>
-
+                    <img src="images/linkedin.png" alt="Linkedin">
                 </div>
                 <div class="nav-options"></div>
                 <div class="nav-options"></div>
