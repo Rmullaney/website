@@ -27,7 +27,7 @@ class Navigation extends HTMLElement {
                 }
                 .nav-options {
                     display: flex;
-                    justify-content: flex-end;
+                    justify-content: right;
                     align-items: center;
                     width: 25vw;
                 }
@@ -49,8 +49,8 @@ class Navigation extends HTMLElement {
                 }
                 p {
                     color: #1b0aad;
-                    width: 10vw;
-                    height: 5vh;
+                    width: 18vw;
+                    height: 10vh;
                     font-weight: bold;
                 }
                 img {
