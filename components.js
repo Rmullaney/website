@@ -44,10 +44,20 @@ class Navigation extends HTMLElement {
                     font-weight: bold;
                     color: #1b0aad;
                 }
+                a:hover {
+                    text-decoration: underline;
+                }
+                p {
+                    color: #1b0aad;
+                    width: 10vw;
+                    height: 5vh;
+                    font-weight: bold;
+                }
             </style>
             <nav>
                 <div class="logo-and-media">
-                    testing spacing
+                    <p> Ronan Mullaney </p>
+
                 </div>
                 <div class="nav-options"></div>
                 <div class="nav-options"></div>
