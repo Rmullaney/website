@@ -52,10 +52,11 @@ class Navigation extends HTMLElement {
                     width: 18vw;
                     height: 10vh;
                     font-weight: bold;
+                    margin: 0;
                 }
                 img {
                     width: 2vw;
-                    height: 3vh;
+                    height: auto;
                     border-radius: 1vw;
                 }
             </style>

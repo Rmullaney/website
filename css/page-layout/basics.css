@@ -20,7 +20,7 @@
 }
 
 .headshot-img {
-    height: 45vh;
+    height: auto;
     width: 20vw;
     border-radius: 10vw;
 }
