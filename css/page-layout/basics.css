@@ -52,8 +52,11 @@
     border-style: solid;  */
 }
 
-.home-page-brief-description {
+.home-page-image-container {
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .linkedin-icon {
