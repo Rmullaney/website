@@ -54,10 +54,15 @@
 }
 
 .home-page-image-container {
-    width: 100vw;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.home-page-intro-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .linkedin-icon {
