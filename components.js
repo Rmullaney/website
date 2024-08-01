@@ -53,6 +53,9 @@ class Navigation extends HTMLElement {
                     height: 10vh;
                     font-weight: bold;
                     margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
                 img {
                     width: 2vw;
@@ -63,6 +66,7 @@ class Navigation extends HTMLElement {
             <nav>
                 <div class="logo-and-media">
                     <p> Ronan Mullaney </p>
+                    <img src=images/headshot.jpg alt="Headshot">
                     <a href=https://www.linkedin.com/in/ronanmullaney target="_blank">
                         <img src="images/linkedin.png" alt="Linkedin">
                     </a>
