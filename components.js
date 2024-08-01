@@ -43,6 +43,9 @@ class Navigation extends HTMLElement {
                     text-decoration: none;
                     font-weight: bold;
                     color: #1b0aad;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
                 a:hover {
                     text-decoration: underline;
@@ -66,7 +69,6 @@ class Navigation extends HTMLElement {
             <nav>
                 <div class="logo-and-media">
                     <p> Ronan Mullaney </p>
-                    <img src=images/headshot.jpg alt="Headshot">
                     <a href=https://www.linkedin.com/in/ronanmullaney target="_blank">
                         <img src="images/linkedin.png" alt="Linkedin">
                     </a>
