@@ -27,7 +27,7 @@ class Navigation extends HTMLElement {
                 }
                 .nav-options {
                     display: flex;
-                    justify-content: right;
+                    justify-content: center;
                     align-items: center;
                     width: 25vw;
                 }
