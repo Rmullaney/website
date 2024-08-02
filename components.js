@@ -38,8 +38,6 @@ class Navigation extends HTMLElement {
                     align-items: center;
                 }
                 a {
-                    width: 10vw;
-                    height: 5vh;
                     text-decoration: none;
                     font-weight: bold;
                     color: #1b0aad;
@@ -52,8 +50,6 @@ class Navigation extends HTMLElement {
                 }
                 p {
                     color: #1b0aad;
-                    width: 18vw;
-                    height: 10vh;
                     font-weight: bold;
                     margin: 0;
                     display: flex;
@@ -77,8 +73,8 @@ class Navigation extends HTMLElement {
                 <div class="nav-options"></div>
                 <div class="nav-options">
                     <a href="index.html">Home</a>
-                    <a href="experience.html">About</a>
-                    <a href="about.html">Experience</a>
+                    <a href="about.html">About</a>
+                    <a href="experience.html">Experience</a>
                 </div>
             </nav>
         `;
