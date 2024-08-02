@@ -27,7 +27,7 @@ class Navigation extends HTMLElement {
                 }
 
                 .fifty-width-leftside-container {
-                    heigth: 10vh;
+                    height: 10vh;
                     width: 50vw;
                     display: flex;
                     flex-direction: row;
@@ -49,6 +49,7 @@ class Navigation extends HTMLElement {
                     text-decoration: none;
                     font-weight: bold;
                     color: #1b0aad;
+                    margin-right: 2vw;
                 }
                 a:hover {
                     text-decoration: underline;
