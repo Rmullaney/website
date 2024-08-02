@@ -22,8 +22,8 @@ class Navigation extends HTMLElement {
                     height: 10vh;
                     width: 100vw;
                     display: flex;
-                    justify-content: flex-end;
-                    align-items: space-evenly;
+                    justify-content: flex-start;
+                    align-items: center;
                     width: 100vw;
                 }
                 .nav-options {
@@ -67,6 +67,9 @@ class Navigation extends HTMLElement {
                 }
                 filler-box {
                     width: 45vw;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
                 }
             </style>
             <nav>
