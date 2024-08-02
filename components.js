@@ -24,14 +24,13 @@ class Navigation extends HTMLElement {
                     display: flex;
                     justify-content: flex-end;
                     align-items: space-evenly;
-                    max-width: 100%;
+                    width: 100vw;
                 }
                 .nav-options {
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
-                    max-width: 25vw;
-                    
+                    width: 30vw;
                 }
                 .logo-and-media {
                     display: flex;
@@ -68,6 +67,9 @@ class Navigation extends HTMLElement {
                     height: auto;
                     border-radius: 1vw;
                 }
+                filler-box {
+                    width: 45vw;
+                }
             </style>
             <nav>
                 <div class="logo-and-media">
@@ -76,8 +78,7 @@ class Navigation extends HTMLElement {
                         <img src="images/linkedin.png" alt="Linkedin">
                     </a>
                 </div>
-                <div class="nav-options"></div>
-                <div class="nav-options"></div>
+                <div class="filler-box"></div>
                 <div class="nav-options">
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
