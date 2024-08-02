@@ -66,15 +66,16 @@ class Navigation extends HTMLElement {
                 }
             </style>
             <nav>
-                
-                <div class="nav-options"></div>
-                <div class="nav-options"></div>
-                <div class="nav-options"></div>
-                <div class="nav-options">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="experience.html">Experience</a>
+                <div class="logo-and-media">
+                    <p> Ronan Mullaney </p>
+                    <a href=https://www.linkedin.com/in/ronanmullaney target="_blank">
+                        <img src="images/linkedin.png" alt="Linkedin">
+                    </a>
                 </div>
+                <div class="nav-options"></div>
+                <div class="nav-options"></div>
+                <div class="nav-options"></div>
+                
             </nav>
         `;
     }
