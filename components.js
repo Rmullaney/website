@@ -24,6 +24,7 @@ class Navigation extends HTMLElement {
                     display: flex;
                     justify-content: flex-end;
                     align-items: space-evenly;
+                    overflow-x: hidden;
                 }
                 .nav-options {
                     display: flex;
@@ -45,6 +46,7 @@ class Navigation extends HTMLElement {
                     justify-content: flex-start;
                     align-items: center;
                     width: 8vw;
+                    size: 1vw;
                 }
                 a:hover {
                     text-decoration: underline;
@@ -57,6 +59,7 @@ class Navigation extends HTMLElement {
                     justify-content: center;
                     align-items: center;
                     margin-left: 3vw;
+                    size: 1vw;
                 }
                 img {
                     margin-left: 1vw;
