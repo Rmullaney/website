@@ -77,8 +77,8 @@ class Navigation extends HTMLElement {
                 <div class="nav-options"></div>
                 <div class="nav-options">
                     <a href="index.html">Home</a>
-                    <a href="experience.html">Experience</a>
-                    <a href="about.html">About</a>
+                    <a href="experience.html">About</a>
+                    <a href="about.html">Experience</a>
                 </div>
             </nav>
         `;
