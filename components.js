@@ -27,7 +27,7 @@ class Navigation extends HTMLElement {
                 }
                 .nav-options {
                     display: flex;
-                    justify-content: center;
+                    justify-content: flex-start;
                     align-items: center;
                     width: 25vw;
                 }
@@ -78,7 +78,7 @@ class Navigation extends HTMLElement {
                 <div class="nav-options">
                     <a href="index.html">Home</a>
                     <a href="experience.html">Experience</a>
-                    <a href="about.html">About Me</a>
+                    <a href="about.html">About</a>
                 </div>
             </nav>
         `;
