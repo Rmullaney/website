@@ -27,6 +27,7 @@ class Navigation extends HTMLElement {
                 }
 
                 .fifty-width-leftside-container {
+                    box-sixing: border-box;
                     height: 10vh;
                     width: 50vw;
                     display: flex;
@@ -36,6 +37,7 @@ class Navigation extends HTMLElement {
                 }
 
                 .fifty-width-rightside-container {
+                    box-sizing: border-box;
                     height: 10vh;
                     width: 50vw;
                     display: flex;
