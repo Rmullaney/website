@@ -24,7 +24,7 @@ class Navigation extends HTMLElement {
                     display: flex;
                     justify-content: flex-end;
                     align-items: space-evenly;
-                    overflow-x: hidden;
+                    max-width: 100%
                 }
                 .nav-options {
                     display: flex;
