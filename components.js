@@ -45,8 +45,6 @@ class Navigation extends HTMLElement {
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
-                    width: 8vw;
-                    size: 1vw;
                 }
                 a:hover {
                     text-decoration: underline;
