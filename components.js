@@ -26,18 +26,20 @@ class Navigation extends HTMLElement {
                     align-items: center;
                 }
 
-                50-width-leftside-container {
+                fifty-width-leftside-container {
                     heigth: 10vh;
                     width: 50vw;
                     display: flex;
+                    flex-direction: row;
                     justify-content: flex-start;
                     align-items: center;
                 }
 
-                50-width-rightside-container {
+                fifty-width-rightside-container {
                     height: 10vh;
                     width: 50vw;
                     display: flex;
+                    flex-direction: row;
                     justify-content: flex-end;
                     align-items: center;
                 }
@@ -68,19 +70,19 @@ class Navigation extends HTMLElement {
             </style>
             <nav>
 
-                <div class="50-width-leftside-container">
+                <div class="fifty-width-leftside-container">
                     <p> Ronan Mullaney </p>
                     <a href=https://www.linkedin.com/in/ronanmullaney target="_blank">
                         <img src="images/linkedin.png" alt="Linkedin">
                     </a>
                 </div>
 
-                <div class="50-width-rightside-container">
+                <div class="fifty-width-rightside-container">
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
                     <a href="experience.html">Experience</a>
                 </div>
-                
+
             </nav>
         `;
     }
