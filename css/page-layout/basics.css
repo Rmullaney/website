@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .experience-page-body {
     height: 100vh;
 }
