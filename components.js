@@ -26,7 +26,7 @@ class Navigation extends HTMLElement {
                     align-items: center;
                 }
 
-                fifty-width-leftside-container {
+                .fifty-width-leftside-container {
                     heigth: 10vh;
                     width: 50vw;
                     display: flex;
@@ -35,7 +35,7 @@ class Navigation extends HTMLElement {
                     align-items: center;
                 }
 
-                fifty-width-rightside-container {
+                .fifty-width-rightside-container {
                     height: 10vh;
                     width: 50vw;
                     display: flex;
