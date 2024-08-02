@@ -2,18 +2,6 @@
     height: 100vh;
 }
 
-.aqua { /* Test for colors and stuff */
-    background-color: aqua;
-}
-
-.darkred {
-    background-color: darkred;
-}
-
-.green {
-    background-color: rgb(110, 198, 86);
-}
-
 .home-page-text {
     color: #1b0aad;
     width: 50vw;

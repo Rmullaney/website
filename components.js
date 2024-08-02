@@ -24,13 +24,14 @@ class Navigation extends HTMLElement {
                     display: flex;
                     justify-content: flex-end;
                     align-items: space-evenly;
-                    max-width: 100%
+                    max-width: 100%;
                 }
                 .nav-options {
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
-                    width: 25vw;
+                    max-width: 25vw;
+                    
                 }
                 .logo-and-media {
                     display: flex;
