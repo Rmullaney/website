@@ -24,27 +24,29 @@ class Navigation extends HTMLElement {
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
-                    width: 100vw;
                 }
-                .nav-options {
+
+                50-width-leftside-container {
+                    heigth: 10vh;
+                    width: 50vw;
                     display: flex;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    width: 30vw;
-                }
-                .logo-and-media {
-                    display: flex;
-                    width: 25vw;
                     justify-content: flex-start;
                     align-items: center;
                 }
+
+                50-width-rightside-container {
+                    height: 10vh;
+                    width: 50vw;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+
+
                 a {
                     text-decoration: none;
                     font-weight: bold;
                     color: #1b0aad;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
                 }
                 a:hover {
                     text-decoration: underline;
@@ -52,10 +54,6 @@ class Navigation extends HTMLElement {
                 p {
                     color: #1b0aad;
                     font-weight: bold;
-                    margin: 0;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                     margin-left: 3vw;
                     size: 1vw;
                 }
@@ -64,27 +62,25 @@ class Navigation extends HTMLElement {
                     width: 2vw;
                     height: auto;
                     border-radius: 1vw;
-                }
-                filler-box {
-                    width: 45vw;
-                    display: flex;
-                    justify-content: space-evenly;
-                    align-items: center;
-                }
+                }  
+
+                
             </style>
             <nav>
-                <div class="logo-and-media">
+
+                <div class="50-width-leftside-container">
                     <p> Ronan Mullaney </p>
                     <a href=https://www.linkedin.com/in/ronanmullaney target="_blank">
                         <img src="images/linkedin.png" alt="Linkedin">
                     </a>
                 </div>
-                <div class="filler-box"></div>
-                <div class="nav-options">
+
+                <div class="50-width-rightside-container">
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
                     <a href="experience.html">Experience</a>
                 </div>
+                
             </nav>
         `;
     }
