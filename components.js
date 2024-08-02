@@ -44,7 +44,7 @@ class Navigation extends HTMLElement {
                     font-weight: bold;
                     color: #1b0aad;
                     display: flex;
-                    justify-content: center;
+                    justify-content: flex-start;
                     align-items: center;
                 }
                 a:hover {
@@ -78,6 +78,7 @@ class Navigation extends HTMLElement {
                 <div class="nav-options">
                     <a href="index.html">Home</a>
                     <a href="experience.html">Experience</a>
+                    <a href="about.html">About Me</a>
                 </div>
             </nav>
         `;
