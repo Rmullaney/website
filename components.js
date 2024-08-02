@@ -27,7 +27,7 @@ class Navigation extends HTMLElement {
                 }
                 .nav-options {
                     display: flex;
-                    justify-content: flex-start;
+                    justify-content: space-evenly;
                     align-items: center;
                     width: 25vw;
                 }
@@ -55,8 +55,10 @@ class Navigation extends HTMLElement {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    margin-left: 3vw;
                 }
                 img {
+                    margin-left: 1vw;
                     width: 2vw;
                     height: auto;
                     border-radius: 1vw;
