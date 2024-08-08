@@ -96,12 +96,22 @@ class AboutComponent extends HTMLElement {
         const text = this.getAttribute('text') || 'Text Cannot Load';
         const side = this.getAttribute('img-side') || 'left';
 
-
-        text = text + " " + side + " " + (side == 'left');
+        optionalContent=`
+        <div>
+            <p>
+                Debug Beacon Original
+            </p>
+        </div>
+        `
 
         let flexDirection = '';
         if (side == 'left'){
             flexDirection = 'row';
+            optionalContent=`
+                <div>
+                    <p> Debug Beacon side == left </p>
+                </div>
+            `
         } else {
             flexDirection = 'row-reverse';
         }
@@ -147,6 +157,7 @@ class AboutComponent extends HTMLElement {
                     <h3 class="about-text">${text}</h3>
                 </div>
             </div>
+            ${optionalContent}
         `
     }
 }
