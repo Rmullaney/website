@@ -17,6 +17,7 @@
 
 .gradient {
     background-image: linear-gradient(to bottom, #f5ce7a, #429ef5);
+    width: 100vw;
 }
 
 .home-page-outermost-container {
