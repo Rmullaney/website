@@ -1,7 +1,6 @@
 
 .home-page-text {
     color: #1b0aad;
-    width: 50vw;
     size: 2vw;
 }
 
@@ -22,8 +21,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
-    margin-top: 5vh;
-    height: 85vh;
+    height: 80vh;
     /* border-width: 1vw;
     border-color: black;
     border-style: solid;  */

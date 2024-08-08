@@ -51,7 +51,7 @@ class Navigation extends HTMLElement {
                     text-decoration: none;
                     font-weight: bold;
                     color: #1b0aad;
-                    margin-right: 2vw;
+                    margin-right: 3vw;
                 }
                 a:hover {
                     text-decoration: underline;
