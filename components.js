@@ -93,10 +93,10 @@ class AboutComponent extends HTMLElement {
 
     connectedCallback() {
         const imageUrl = this.getAttribute('img') || 'default.jpg';
-        const text = this.getAttribute('text') || 'Text Cannot Load';
-        const side = this.getAttribute('img-side') || 'left';
+        const text = (this.getAttribute('text') || 'Text Cannot Load').trim();
+        const side = (this.getAttribute('img-side') || 'left').trim();
 
-        const flexDirection = (side === 'left') ? 'row' : 'row-reverse'
+        const flexDirection = (side == 'left') ? 'row' : 'row-reverse'
 
         this.innerHTML = `
             <style>
@@ -135,7 +135,7 @@ class AboutComponent extends HTMLElement {
                     <img class="temp-img" src=${imageUrl} alt="Image Cannot Load">
                 </div>
                 <div class="about-text-box">
-                    <h3 class="about-text">${text === "TEST" ? "pass" : text}</h3>
+                    <h3 class="about-text">${text == "TEST" ? "pass" : text}</h3>
                 </div>
             </div>
         `
