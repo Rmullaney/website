@@ -97,6 +97,8 @@ class AboutComponent extends HTMLElement {
         const side = this.getAttribute('img-side') || 'left';
 
 
+        text = text + " " + side + " " + (side == 'left');
+
         let flexDirection = '';
         if (side == 'left'){
             flexDirection = 'row';
