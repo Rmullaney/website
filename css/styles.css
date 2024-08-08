@@ -1,1 +1,3 @@
-@import url(./page-layout/basics.css)
+@import url(./page-layouts/homePage.css);
+@import url(./page-layouts/about.css);
+@import url(./page-layouts/experience.css);
