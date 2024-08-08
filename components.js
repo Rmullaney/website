@@ -83,7 +83,7 @@ class Navigation extends HTMLElement {
                 <div class="fifty-width-rightside-container">
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
-
+                    <a href="experience.html">Experience</a>
                 </div>
 
             </nav>
