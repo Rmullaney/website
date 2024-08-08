@@ -105,7 +105,7 @@ class AboutComponent extends HTMLElement {
                 <div>
                     <p> Debug Beacon side == left </p>
                 </div>
-            `
+            `;
         } else {
             flexDirection = 'row-reverse';
         }
