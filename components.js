@@ -1,19 +1,10 @@
+
+
+//NAVIGATION BAR COMPONENT
 class Navigation extends HTMLElement {
     constructor() {
         super();
     }
-
-    /* Debug Borders
-
-                    border-style: solid;
-                    border-width: 1vw;
-                    border-color: black;
-
-                    border-style: solid;
-                    border-width: 1vw;
-                    border-color: white;
-
-    */
 
     connectedCallback() {
         this.innerHTML = `
@@ -92,3 +83,70 @@ class Navigation extends HTMLElement {
 }
 
 customElements.define('nav-bar', Navigation);
+
+
+//ABOUT PAGE SECTION COMPONENT
+class AboutComponent extends HTMLElement {
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
+        const imageUrl = this.getAttribute('img') || 'default.jpg';
+        const text = this.getAttribute('text') || 'Text Cannot Load';
+        const side = this.getAttribute('img-side') || 'left';
+
+
+        let flexDirection = '';
+        if (side == 'left'){
+            flexDirection = 'row';
+        } else {
+            flexDirection = 'row-reverse';
+        }
+        
+
+        this.innerHTML = `
+            <style>
+                .about-image-and-text-box {
+                    width: 100vw;
+                    display: flex;
+                    flex-direction: ${flexDirection};
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+
+                .about-image-box {
+                    display: flex;
+                    justify-content: ${side};
+                    align-items: flex-start;
+                }
+
+                .about-text-box {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .about-text {
+                    color: #1b0aad;
+                }
+
+                .temp-img {
+                    height: auto;
+                    width: 20vw;
+                    border-radius: 10vw;
+                }
+            </style>
+            <div class="about-image-and-text-box">
+                <div class="about-image-box">
+                    <img class="temp-img" src=${imageUrl} alt="Image Cannot Load">
+                </div>
+                <div class="about-text-box">
+                    <h3 class="about-text">${text}</h3>
+                </div>
+            </div>
+        `
+    }
+}
+
+customElements.define('about-page-box', AboutComponent);
