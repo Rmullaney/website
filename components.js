@@ -96,14 +96,12 @@ class AboutComponent extends HTMLElement {
         const text = (this.getAttribute('text') || 'Text Cannot Load').trim();
         const side = (this.getAttribute('img-side') || 'left').trim();
 
-        const flexDirection = (side == "LEFT") ? 'row' : 'row-reverse'
-
         this.innerHTML = `
             <style>
                 .about-image-and-text-box {
                     width: 100vw;
                     display: flex;
-                    flex-direction: ${flexDirection};
+                    flex-direction: ${(side == "LEFT" ? 'row' : 'row-reverse')};
                     justify-content: space-evenly;
                     align-items: center;
                 }
