@@ -151,7 +151,6 @@ class AboutComponent extends HTMLElement {
                     <h3 class="about-text">${text}</h3>
                 </div>
             </div>
-            ${optionalContent}
         `
     }
 }
