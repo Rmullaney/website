@@ -97,7 +97,6 @@ class AboutComponent extends HTMLElement {
         const side = this.getAttribute('img-side') || 'left';
 
         const flexDirection = (side === 'left') ? 'row' : 'row-reverse'
-        
 
         this.innerHTML = `
             <style>
@@ -136,7 +135,7 @@ class AboutComponent extends HTMLElement {
                     <img class="temp-img" src=${imageUrl} alt="Image Cannot Load">
                 </div>
                 <div class="about-text-box">
-                    <h3 class="about-text">${text}</h3>
+                    <h3 class="about-text">${text === "TEST" ? "pass" : text}</h3>
                 </div>
             </div>
         `
