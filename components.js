@@ -96,7 +96,7 @@ class AboutComponent extends HTMLElement {
         const text = (this.getAttribute('text') || 'Text Cannot Load').trim();
         const side = (this.getAttribute('img-side') || 'left').trim();
 
-        const flexDirection = (side == 'left') ? 'row' : 'row-reverse'
+        const flexDirection = (side == "LEFT") ? 'row' : 'row-reverse'
 
         this.innerHTML = `
             <style>
