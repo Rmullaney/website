@@ -95,14 +95,14 @@ class AboutComponent extends HTMLElement {
     connectedCallback() {
         const imageUrl = this.getAttribute('img') || 'default.jpg';
         const text = this.getAttribute('text') || 'Text Cannot Load';
-        const side = this.getAttribute('img-side') || 'row';
+        const side = this.getAttribute('img-side') || 'column';
 
         this.innerHTML = `
             <style>
                 .about-image-and-text-box {
                     width: 100vw;
                     display: flex;
-                    flex-direction: row-reverse;
+                    flex-direction: ${side};
                     justify-content: space-evenly;
                     align-items: center;
                 }
