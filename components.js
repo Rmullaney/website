@@ -101,7 +101,7 @@ class AboutComponent extends HTMLElement {
                 .about-image-and-text-box {
                     width: 100vw;
                     display: flex;
-                    flex-direction: ${(side == "LEFT" ? row : row-reverse)};
+                    flex-direction: ${side == "LEFT" ? 'row' : 'row-reverse'};
                     justify-content: space-evenly;
                     align-items: center;
                 }
@@ -134,6 +134,7 @@ class AboutComponent extends HTMLElement {
                 </div>
                 <div class="about-text-box">
                     <h3 class="about-text">${text == "TEST" ? "pass" : text}</h3>
+                    <h3 class="about-text">${side == "LEFT" ? 'row' : 'row-reverse'}</h3>
                 </div>
             </div>
         `
