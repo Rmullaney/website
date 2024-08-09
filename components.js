@@ -95,20 +95,23 @@ class AboutComponent extends HTMLElement {
         const imageUrl = this.getAttribute('img') || 'default.jpg';
         const text = (this.getAttribute('text') || 'Text Cannot Load').trim();
         const side = (this.getAttribute('img-side') || 'left').trim();
-
+        const debug = this.getAttribute('debug-att') || 'column';
+//problem is that flex-direction styling doesn't even register the conditional logic and defaults to row, I think.
+//now we gonna test if styling can take an attribute and put it into effect
+// original shit: flex-direction: ${side == "LEFT" ? 'row' : 'row-reverse'};
         this.innerHTML = `
             <style>
                 .about-image-and-text-box {
                     width: 100vw;
                     display: flex;
-                    flex-direction: ${side == "LEFT" ? 'row' : 'row-reverse'};
+                    flex-direction: ${debug};
                     justify-content: space-evenly;
                     align-items: center;
                 }
 
                 .about-image-box {
                     display: flex;
-                    justify-content: ${side};
+                    justify-content: center;
                     align-items: flex-start;
                 }
 
