@@ -102,7 +102,7 @@ class AboutComponent extends HTMLElement {
                 .about-image-and-text-box {
                     width: 100vw;
                     display: flex;
-                    flex-direction: ${side};
+                    flex-direction: row-reverse;
                     justify-content: space-evenly;
                     align-items: center;
                 }
@@ -134,7 +134,7 @@ class AboutComponent extends HTMLElement {
                     <img class="temp-img" src=${imageUrl} alt="Image Cannot Load">
                 </div>
                 <div class="about-text-box">
-                    <h3 class="about-text">${text == "TEST" ? "pass" : text}</h3>
+                    <h3 class="about-text">${text}</h3>
                 </div>
             </div>
         `
