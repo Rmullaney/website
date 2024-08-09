@@ -97,12 +97,36 @@ class AboutComponent extends HTMLElement {
         const text = this.getAttribute('text') || 'Text Cannot Load';
         const side = this.getAttribute('img-side') || 'column';
 
+        const content = side == 'left' ? 
+        `
+            <div class="about-image-and-text-box">
+                <div class="about-image-box">
+                    <img class="temp-img" src=${imageUrl} alt="Image Cannot Load">
+                </div>
+                <div class="about-text-box">
+                    <h3 class="about-text">${text}</h3>
+                </div>
+            </div>
+            `
+        :
+            `
+            <div class="about-image-and-text-box">
+                <div class="about-text-box">
+                    <h3 class="about-text">${text}</h3>
+                </div>
+                <div class="about-image-box">
+                    <img class="temp-img" src=${imageUrl} alt="Image Cannot Load">
+                </div>
+            </div>
+            `
+        ;
+
         this.innerHTML = `
             <style>
                 .about-image-and-text-box {
                     width: 100vw;
                     display: flex;
-                    flex-direction: ${side};
+                    flex-direction: row;
                     justify-content: space-evenly;
                     align-items: center;
                 }
@@ -129,14 +153,7 @@ class AboutComponent extends HTMLElement {
                     border-radius: 10vw;
                 }
             </style>
-            <div class="about-image-and-text-box">
-                <div class="about-image-box">
-                    <img class="temp-img" src=${imageUrl} alt="Image Cannot Load">
-                </div>
-                <div class="about-text-box">
-                    <h3 class="about-text">${text}</h3>
-                </div>
-            </div>
+            ${content}
         `
     }
 }
