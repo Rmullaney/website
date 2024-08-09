@@ -86,6 +86,7 @@ customElements.define('nav-bar', Navigation);
 
 
 //ABOUT PAGE SECTION COMPONENT
+//Side is either 'row' for image on left or 'row-reverse' for image on right
 class AboutComponent extends HTMLElement {
     constructor() {
         super();
@@ -93,18 +94,15 @@ class AboutComponent extends HTMLElement {
 
     connectedCallback() {
         const imageUrl = this.getAttribute('img') || 'default.jpg';
-        const text = (this.getAttribute('text') || 'Text Cannot Load').trim();
-        const side = (this.getAttribute('img-side') || 'left').trim();
-        const debug = this.getAttribute('debug-att') || 'column';
-//problem is that flex-direction styling doesn't even register the conditional logic and defaults to row, I think.
-//now we gonna test if styling can take an attribute and put it into effect
-// original shit: flex-direction: ${side == "LEFT" ? 'row' : 'row-reverse'};
+        const text = this.getAttribute('text') || 'Text Cannot Load';
+        const side = this.getAttribute('img-side') || 'row';
+
         this.innerHTML = `
             <style>
                 .about-image-and-text-box {
                     width: 100vw;
                     display: flex;
-                    flex-direction: ${debug};
+                    flex-direction: ${side};
                     justify-content: space-evenly;
                     align-items: center;
                 }
@@ -137,7 +135,6 @@ class AboutComponent extends HTMLElement {
                 </div>
                 <div class="about-text-box">
                     <h3 class="about-text">${text == "TEST" ? "pass" : text}</h3>
-                    <h3 class="about-text">${side == "LEFT" ? 'row' : 'row-reverse'}</h3>
                 </div>
             </div>
         `
