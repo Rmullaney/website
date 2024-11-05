@@ -11,7 +11,9 @@ class Navigation extends HTMLElement {
             .linkedin_img {
                 margin-left: 1vw;
                 width: 2vw;
+                max-width: 30px;
                 height: auto;
+                max-height: 30px;
                 border-radius: 1vw;
             }
 
