@@ -8,7 +8,7 @@ class Navigation extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-            <header class="sticky-top bg-dark">
+            <header class="sticky-top bg-primary">
                 <nav class="navbar navbar-expand-lg navbar-dark container">
                     <a class="navbar-brand" href="#">My Website</a>
 
