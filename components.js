@@ -8,76 +8,29 @@ class Navigation extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-            <style>
-                nav {
-                    height: 10vh;
-                    width: 100vw;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                }
+            <header class="sticky-top bg-dark">
+                <nav class="navbar navbar-expand-lg navbar-dark container">
+                    <a class="navbar-brand" href="#">My Website</a>
 
-                .fifty-width-leftside-container {
-                    box-sixing: border-box;
-                    height: 10vh;
-                    width: 50vw;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: flex-start;
-                    align-items: center;
-                }
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                .fifty-width-rightside-container {
-                    box-sizing: border-box;
-                    height: 10vh;
-                    width: 50vw;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: flex-end;
-                    align-items: center;
-                }
-
-
-                a {
-                    text-decoration: none;
-                    font-weight: bold;
-                    color: #1b0aad;
-                    margin-right: 3vw;
-                }
-                a:hover {
-                    text-decoration: underline;
-                }
-                p {
-                    color: #1b0aad;
-                    font-weight: bold;
-                    margin-left: 3vw;
-                    size: 1vw;
-                }
-                img {
-                    margin-left: 1vw;
-                    width: 2vw;
-                    height: auto;
-                    border-radius: 1vw;
-                }  
-
-                
-            </style>
-            <nav>
-
-                <div class="fifty-width-leftside-container">
-                    <p> Ronan Mullaney </p>
-                    <a href=https://www.linkedin.com/in/ronanmullaney target="_blank">
-                        <img src="images/linkedin.png" alt="Linkedin">
-                    </a>
-                </div>
-
-                <div class="fifty-width-rightside-container">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="experience.html">Experience</a>
-                </div>
-
-            </nav>
+                    <div class="navbar-collapse collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="experience.html">My Experience</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
         `;
     }
 }
