@@ -11,8 +11,8 @@ class Navigation extends HTMLElement {
             <header class="sticky-top bg-primary">
                 <nav class="navbar navbar-expand-lg navbar-dark container">
                     <div class="container-fluid">
-                        <a href=https://www.linkedin.com/in/ronanmullaney target="_blank">
-                            <img src="images/linkedin.png" alt="Linkedin">
+                        <a class="navbar-brand" href="https://www.linkedin.com/in/ronanmullaney" target="_blank">
+                            <img class="img-fluid" src="images/linkedin.png" alt="Linkedin">
                         </a>
 
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
