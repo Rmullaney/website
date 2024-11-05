@@ -9,30 +9,29 @@ class Navigation extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
 
-            <header class="sticky-top bg-primary">
-                <nav class="navbar navbar-expand-lg navbar-dark container">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="https://www.linkedin.com/in/ronanmullaney" target="_blank">
-                            <img class="img-fluid" style="max-width: 30px; max-height:30px;" src="images/linkedin.png" alt="Linkedin">
-                        </a>
 
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+            <header class="sticky-top" style="background-color: #E6F0FA;">
+                <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
+                    <a class="navbar-brand" href="https://www.linkedin.com/in/ronanmullaney" target="_blank">
+                        <img class="img-fluid" style="max-width: 30px; max-height:30px;" src="images/linkedin.png" alt="Linkedin">
+                    </a>
 
-                        <div class="navbar-collapse collapse" id="navbarNav">
-                            <ul class="navbar-nav ms-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About Me</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="experience.html">My Experience</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="navbar-collapse collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="experience.html">My Experience</a>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </header>
