@@ -8,6 +8,8 @@ class Navigation extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
+
+            <style>
             .linkedin_img {
                 margin-left: 1vw;
                 width: 2vw;
@@ -16,7 +18,7 @@ class Navigation extends HTMLElement {
                 max-height: 30px;
                 border-radius: 1vw;
             }
-
+            </style>
 
             <header class="sticky-top bg-primary">
                 <nav class="navbar navbar-expand-lg navbar-dark container">
