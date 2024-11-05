@@ -10,24 +10,28 @@ class Navigation extends HTMLElement {
         this.innerHTML = `
             <header class="sticky-top bg-primary">
                 <nav class="navbar navbar-expand-lg navbar-dark container">
-                    <a class="navbar-brand" href="#">My Website</a>
+                    <div class="container-fluid">
+                        <a href=https://www.linkedin.com/in/ronanmullaney target="_blank">
+                            <img src="images/linkedin.png" alt="Linkedin">
+                        </a>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                    <div class="navbar-collapse collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About Me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="experience.html">My Experience</a>
-                            </li>
-                        </ul>
+                        <div class="navbar-collapse collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="experience.html">My Experience</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
             </header>
