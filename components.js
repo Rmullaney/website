@@ -10,7 +10,7 @@ class Navigation extends HTMLElement {
         this.innerHTML = `
 
 
-            <header class="sticky-top" style="background-color: #E6F0FA;">
+            <header class="sticky-top container-fluid" style="background-color: #0B3D91;">
                 <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
                     <a class="navbar-brand" href="https://www.linkedin.com/in/ronanmullaney" target="_blank">
                         <img class="img-fluid" style="max-width: 30px; max-height:30px;" src="images/linkedin.png" alt="Linkedin">
