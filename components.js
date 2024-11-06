@@ -41,6 +41,41 @@ class Navigation extends HTMLElement {
 
 customElements.define('nav-bar', Navigation);
 
+//Experience page modal component
+class ModalComponent extends HTMLElement {
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
+        const id = this.getAttribute('modal_id')
+        const title = this.getAttribute('modal_title')
+        const description = this.getAttribute('modal_description')
+
+        this.innerHTML  = `
+            <div class="modal fade" id=${id} tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modalLabel">${title}</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            ${description}
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `
+    }
+}
+
+customElements.define('experience-modal', ModalComponent);
+
 
 //ABOUT PAGE SECTION COMPONENT
 //Side is either 'row' for image on left or 'row-reverse' for image on right
