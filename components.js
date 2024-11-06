@@ -54,7 +54,7 @@ class ModalComponent extends HTMLElement {
 
         this.innerHTML  = `
             <div class="modal fade" id=${id} tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg>
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h4 class="modal-title" id="modalLabel">${title}</h4>
