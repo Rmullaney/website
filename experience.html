@@ -35,7 +35,7 @@
         <experience-modal modal_id="thisSiteId" modal_title="This Website" modal_description="This is the description the website I'm currently building"></experience-modal>
         <experience-modal modal_id="softEngProjId" modal_title="Software Engineering Course Project" modal_description="This is the description about my software engineering project"></experience-modal>
         <experience-modal modal_id="teachAssistId" modal_title="Teaching Assistant" modal_description="I have been a teaching assistant for COSC208 - Introduction to Computer Systems - for two semesters and a teaching assistant for COSC215 - Software Analysis and Testing - for one semester My duties include assisting students with questions and concepts during lab periods while also providing an open office hour where I answer questions about class material and assist students with course projects. This position has helped me develop my communication skills, as I often have to explain difficult and complex technical concepts in simple or non-technical contexts. Furthermore, by continuously familiarizing and mastering the content of these courses in order to help students, I have a fantastic grasp on the C language, large-scale computer systems and programs, and different software analysis and testing principles."></experience-modal>
-        <experience-modal modal_id="OCSId" modal_title="Marine Corps Officer Candidate School"></experience-modal>
+        <experience-modal modal_id="OCSId" modal_title="Marine Corps Officer Candidate School" modal_description="default"></experience-modal>
         <experience-modal modal_id="theBoardroomId" modal_title="The Boardroom Restaurant Job" modal_description="This is the description the website I'm currently building"></experience-modal>
         <experience-modal modal_id="habitatId" modal_title="Habitat for Humanity Service Trip" modal_description="This is the description the website I'm currently building"></experience-modal>
         <experience-modal modal_id="letterProjId" modal_title="The Letter Project" modal_description="This is the description the website I'm currently building"></experience-modal>
@@ -45,7 +45,18 @@
 
             import {teachingAssistantDescription} from './constants.js';
 
-            document.querySelector("#OCSId").setAttribute('modal_description', teachingAssistantDescription);
+            console.log(teachingAssistantDescription);
+
+            ocsElement = document.querySelector("#OCSId")
+
+            console.log(ocsElement);
+
+            if (ocsElement) {
+                ocsElement.setAttribute('modal_description', teachingAssistantDescription);
+            } else {
+                console.log("Element is null");
+            }
+
 
         </script>
     </div>
