@@ -57,9 +57,9 @@ class ModalComponent extends HTMLElement {
         const id = this.getAttribute('modal_id')
         const title = this.getAttribute('modal_title')
         const description = this.getAttribute('modal_description')
-
+        let newDesc = "nothing to see here"
         if (id == "teachAssistId"){
-            description = taDesc;
+            newDesc = taDesc
         }
 
         this.innerHTML  = `
@@ -72,6 +72,7 @@ class ModalComponent extends HTMLElement {
 
                         <div class="modal-body">
                             ${description}
+                            ${newDesc}
                         </div>
 
                         <div class="modal-footer">
