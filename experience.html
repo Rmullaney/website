@@ -5,12 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience Page</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="css/page-layouts/experience.css" rel="stylesheet">
     <script src="components.js" type="text/javascript" defer></script>
 </head>
 
-<body class="gradient experience-page-body">
-    
+<body class="container-fluid bg-light" style="margin:0; padding:0;">
+    <nav-bar></nav-bar>
 
+    <div class="container">
+        <h2>Courses and Languages</h2>
+        <p>Math Courses: Calculus II, Calculus III, Linear Algebra, Combinatorial Problem Solving, Number Theory</p>
+        <p>Computer Science Courses: Intro, Intro II, Data Structures and Algorithms, Introduction to Computer Systems, Discrete Structures, Internet of Things (Abroad), Software Engineering</p>
+        <p>Languages: Python, Java, C, Ruby (on Rails), React Native, NoSQL, SQL, HTML, CSS, Excel</p>
+        <h2>Technical Experience</h2>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#softEngProjId"><p>Software Engineering Project</p></a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#raidRidesId"><p>Raider Rides App</p></a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#thisSiteId"><p>This Website</p></a>
+        <p>Other projects?</p>
+        <h2>Work Experience</h2>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#teachAssistId"><p>Teaching Assistant</p></a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#OCSId"><p>Marine Corps Officer Candidate School</p></a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#theBoardroomId"><p>The Boardroom Restaurant Job</p></a>
+        <h2>Volunteering</h2>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#habitatId"><p>Habitat for Humanity</p></a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#letterProjId"><p>The Letter Project</p></a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#linkId"><p>Freshman Orientation Staff</p></a>
+        <experience-modal modal_id="raidRidesId" modal_title="Raider Rides" modal_description="This is the description about raider rides app development"></experience-modal>
+        <experience-modal modal_id="thisSiteId" modal_title="This Website" modal_description="This is the description the website I'm currently building"></experience-modal>
+        <experience-modal modal_id="softEngProjId" modal_title="Software Engineering Course Project" modal_description="This is the description about my software engineering project"></experience-modal>
+        <experience-modal modal_id="teachAssistId" modal_title="Teaching Assistant" modal_description="This is the description the website I'm currently building"></experience-modal>
+        <experience-modal modal_id="OCSId" modal_title="Marine Corps Officer Candidate School" modal_description="This is the description the website I'm currently building"></experience-modal>
+        <experience-modal modal_id="theBoardroomId" modal_title="The Boardroom Restaurant Job" modal_description="This is the description the website I'm currently building"></experience-modal>
+        <experience-modal modal_id="habitatId" modal_title="Habitat for Humanity Service Trip" modal_description="This is the description the website I'm currently building"></experience-modal>
+        <experience-modal modal_id="letterProjId" modal_title="The Letter Project" modal_description="This is the description the website I'm currently building"></experience-modal>
+        <experience-modal modal_id="linkId" modal_title="Freshman Orientation Staff" modal_description="This is the description the website I'm currently building"></experience-modal>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
