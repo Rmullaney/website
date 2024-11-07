@@ -1,1 +1,3 @@
-const teachingAssistantDescription = `test<br>test`
+const teachingAssistantDescription = `test<br>test`;
+
+export { teachingAssistantDescription };
