@@ -53,7 +53,7 @@ class ModalComponent extends HTMLElement {
         const description = this.getAttribute('modal_description')
 
         this.innerHTML  = `
-            <div class="modal fade" id=${id} tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal fade" id=${id} tabindex="-1" aria-labelledby="modalLabel${id}" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
