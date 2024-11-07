@@ -1,0 +1,1 @@
+const teachingAssistantDescription = `test<br>test`
