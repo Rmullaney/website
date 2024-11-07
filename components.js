@@ -1,4 +1,10 @@
-
+const taDesc = `I have been a teaching assistant for COSC208 - Introduction to Computer Systems - for two semesters and a teaching assistant for COSC215 - Software Analysis and Testing - for one semester 
+                <br>
+                My duties include assisting students with questions and concepts during lab periods while also providing an open office hour where I answer questions about class material and assist students with course projects
+                <br>
+                This position has helped me develop my communication skills, as I often have to explain difficult and complex technical concepts in simple or non-technical contexts
+                <br>
+                Furthermore, by continuously familiarizing and mastering the content of these courses in order to help students, I have a fantastic grasp on the C language, large-scale computer systems and programs, and different software analysis and testing principles`;
 
 //NAVIGATION BAR COMPONENT
 class Navigation extends HTMLElement {
@@ -51,6 +57,10 @@ class ModalComponent extends HTMLElement {
         const id = this.getAttribute('modal_id')
         const title = this.getAttribute('modal_title')
         const description = this.getAttribute('modal_description')
+
+        if (id == "teachAssistId"){
+            description = taDesc;
+        }
 
         this.innerHTML  = `
             <div class="modal fade" id=${id} tabindex="-1" aria-labelledby="modalLabel${id}" aria-hidden="true">
