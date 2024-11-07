@@ -56,11 +56,7 @@ class ModalComponent extends HTMLElement {
     connectedCallback() {
         const id = this.getAttribute('modal_id')
         const title = this.getAttribute('modal_title')
-        const description = this.getAttribute('modal_description')
-        let newDesc = "nothing to see here"
-        if (id == "teachAssistId"){
-            newDesc = taDesc
-        }
+        const description = taDesc
 
         this.innerHTML  = `
             <div class="modal fade" id=${id} tabindex="-1" aria-labelledby="modalLabel${id}" aria-hidden="true">
@@ -72,7 +68,6 @@ class ModalComponent extends HTMLElement {
 
                         <div class="modal-body">
                             ${description}
-                            ${newDesc}
                         </div>
 
                         <div class="modal-footer">
