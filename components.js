@@ -6,8 +6,17 @@ const taDesc = `I have been a teaching assistant for COSC208 - Introduction to C
                 <br><br>
                 Furthermore, by continuously familiarizing and mastering the content of these courses in order to help students, I have a fantastic grasp on the C language, large-scale computer systems and programs, and different software analysis and testing principles`;
 const softEngDesc = `Soft Eng Description`;
-const raidRidesDesc = `Raider Rides Description`;
-const websiteDesc = `Website Description`;
+const raidRidesDesc = `In the summer of my sophomore year I co-developed a ride-share app for a student business venture at Colgate
+                <br><br>
+                I taught myself SQL, NoSQL, JavaScript and React Native before and as we developed the app, which relied on Google Cloud and Firebase for our backend
+                <br><br>
+                I was the key developer for many of our major APIs like Google Places, Expo Image Picker, and Stripe payments, and I also integrated Googel Cloud functions into our program
+                <br><br>
+                Over the course of this experience I also learned about the typical Agile development process, as we incorporated 2 week sprints with daily stand-ups and sprint planning and retrospectives into our development process`;
+const websiteDesc = `I developed this website in HTML and CSS and initially set out to create all of the CSS myself. However, in realizing how daunting this task is, I began to utilize Bootstrap which made my visuals far cleaner than they were before
+                <br><br>
+                I have alsoleveraged custom HTML components for each page header and these modals in order to DRY out my code (ensuring that I won't repeat code)
+                `;
 const OCSDesc = `OCS Description`;
 const bRoomDesc = `The Boardroom Description`;
 const habitatDesc = `Habitat for Humanity Description`;
@@ -122,79 +131,3 @@ class ModalComponent extends HTMLElement {
 }
 
 customElements.define('experience-modal', ModalComponent);
-
-
-//ABOUT PAGE SECTION COMPONENT
-//Side is either 'row' for image on left or 'row-reverse' for image on right
-class AboutComponent extends HTMLElement {
-    constructor() {
-        super();
-    }
-
-    connectedCallback() {
-        const imageUrl = this.getAttribute('img') || 'default.jpg';
-        const text = this.getAttribute('text') || 'Text Cannot Load';
-        const side = this.getAttribute('img-side') || 'column';
-
-        const content = side == 'left' ? 
-        `
-            <div class="about-image-and-text-box">
-                <div class="about-image-box">
-                    <img class="temp-img" src=${imageUrl} alt="Image Cannot Load">
-                </div>
-                <div class="about-text-box">
-                    <h3 class="about-text">${text}</h3>
-                </div>
-            </div>
-            `
-        :
-            `
-            <div class="about-image-and-text-box">
-                <div class="about-text-box">
-                    <h3 class="about-text">${text}</h3>
-                </div>
-                <div class="about-image-box">
-                    <img class="temp-img" src=${imageUrl} alt="Image Cannot Load">
-                </div>
-            </div>
-            `
-        ;
-
-        this.innerHTML = `
-            <style>
-                .about-image-and-text-box {
-                    width: 100vw;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-evenly;
-                    align-items: center;
-                }
-
-                .about-image-box {
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-start;
-                }
-
-                .about-text-box {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .about-text {
-                    color: #1b0aad;
-                }
-
-                .temp-img {
-                    height: auto;
-                    width: 20vw;
-                    border-radius: 10vw;
-                }
-            </style>
-            ${content}
-        `
-    }
-}
-
-customElements.define('about-page-box', AboutComponent);
