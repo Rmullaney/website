@@ -5,6 +5,14 @@ const taDesc = `I have been a teaching assistant for COSC208 - Introduction to C
                 This position has helped me develop my communication skills, as I often have to explain difficult and complex technical concepts in simple or non-technical contexts
                 <br>
                 Furthermore, by continuously familiarizing and mastering the content of these courses in order to help students, I have a fantastic grasp on the C language, large-scale computer systems and programs, and different software analysis and testing principles`;
+const softEngDesc = `Soft Eng Description`;
+const raidRidesDesc = `Raider Rides Description`;
+const websiteDesc = `Website Description`;
+const OCSDesc = `OCS Description`;
+const bRoomDesc = `The Boardroom Description`;
+const habitatDesc = `Habitat for Humanity Description`;
+const letProjDesc = `Letter Project Description`;
+const linkDesc = `Link Staff Description`;
 
 //NAVIGATION BAR COMPONENT
 class Navigation extends HTMLElement {
@@ -56,19 +64,37 @@ class ModalComponent extends HTMLElement {
     connectedCallback() {
         const id = this.getAttribute('modal_id')
         const title = this.getAttribute('modal_title')
-        let description = "default"
+        let description = "Description Failed to Load"
         switch (id){
             case "raidRidesId":
-                description = "Raider Rides Description";
+                description = raidRidesDesc;
                 break;
             case "thisSiteId":
-                description = "This Site Description";
+                description = websiteDesc;
                 break;
             case "teachAssistId":
                 description = taDesc;
                 break;
+            case "softEngProjId":
+                description = softEngDesc;
+                break;
+            case "OCSId":
+                description = OCSDesc;
+                break;
+            case "theBoardroomId":
+                description = bRoomDesc;
+                break;
+            case "habitatId":
+                description = habitatDesc;
+                break;
+            case "letterProjId":
+                description = letProjDesc;
+                break;
+            case "linkId":
+                description = linkDesc;
+                break;
             default:
-                description = "default2";
+                description = "Description Failed to Load";
                 break;
         }
 
