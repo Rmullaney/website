@@ -1,9 +1,9 @@
 const taDesc = `I have been a teaching assistant for COSC208 - Introduction to Computer Systems - for two semesters and a teaching assistant for COSC215 - Software Analysis and Testing - for one semester 
-                <br>
+                <br><br>
                 My duties include assisting students with questions and concepts during lab periods while also providing an open office hour where I answer questions about class material and assist students with course projects
-                <br>
+                <br><br>
                 This position has helped me develop my communication skills, as I often have to explain difficult and complex technical concepts in simple or non-technical contexts
-                <br>
+                <br><br>
                 Furthermore, by continuously familiarizing and mastering the content of these courses in order to help students, I have a fantastic grasp on the C language, large-scale computer systems and programs, and different software analysis and testing principles`;
 const softEngDesc = `Soft Eng Description`;
 const raidRidesDesc = `Raider Rides Description`;
