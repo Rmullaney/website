@@ -56,7 +56,21 @@ class ModalComponent extends HTMLElement {
     connectedCallback() {
         const id = this.getAttribute('modal_id')
         const title = this.getAttribute('modal_title')
-        const description = taDesc
+        let description = "default"
+        switch (id){
+            case "raidRidesId":
+                description = "Raider Rides Description";
+                break;
+            case "thisSiteId":
+                description = "This Site Description";
+                break;
+            case "teachAssistId":
+                description = taDesc;
+                break;
+            default:
+                description = "default2";
+                break;
+        }
 
         this.innerHTML  = `
             <div class="modal fade" id=${id} tabindex="-1" aria-labelledby="modalLabel${id}" aria-hidden="true">
