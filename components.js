@@ -52,6 +52,8 @@ class ModalComponent extends HTMLElement {
         const title = this.getAttribute('modal_title')
         const description = this.getAttribute('modal_description')
 
+        console.log("I am reaching this modal with id" + id + " and with title " + title)
+
         this.innerHTML  = `
             <div class="modal fade" id=${id} tabindex="-1" aria-labelledby="modalLabel${id}" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
@@ -71,6 +73,8 @@ class ModalComponent extends HTMLElement {
                 </div>
             </div>
         `
+
+        console.log("We've reached the end of the innerHtml of the modal with the id " + id)
     }
 }
 
