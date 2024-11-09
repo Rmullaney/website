@@ -35,9 +35,19 @@ const bRoomDesc = `Over the past three summers I have worked at a local restaura
                 During busy nights I was able to hone my thinking and action under pressure, as I often had at least five different tasks at any given point, of which I had to understand their complex timeline in order to prioritize what I should do at any given point
                 <br><br>
                 Furthermore, I learned foster teamwork within a team of diverse backgrounds and perspectives. Some coworkers were 14 years old and others 60 years old, but we worked as an efficient team all the same`;
-const habitatDesc = `Habitat for Humanity Description`;
-const letProjDesc = `Letter Project Description`;
-const linkDesc = `Link Staff Description`;
+const habitatDesc = `This winter, I will be joining a week-long Habitat for Humanity service trip, where I'll work alongside other volunteers to help build and improve homes for families in need
+                <br><br>
+                Throughout the trip, I will contribute to construction efforts and engage directly with the local community, helping to create affordable housing and strengthen neighborhoods
+                <br><br>
+                I am excited for the chance to gain hands-on experience, learn more about housing challenges, and make a lasting impact by supporting Habitat for Humanity's mission of building a world where everyone has a decent place to live.`;
+const letProjDesc = `As part of The Letter Project on campus, I have the unique opportunity to be a pen-pal to someone in jail, offering friendship and support through consistent correspondence
+                <br><br>
+                Through each letter, I hope to provide a connection to the outside world and offer encouragement. This experience has taught me the importance of empathy, communication, and building trust, even across challenging circumstances, and has deepened my understanding of resilience and the value of human connection.`;
+const linkDesc = `This past fall, I served on the freshman orientation staff, or Link Staff, where I welcomed and guided new students through their first days on campus
+                <br><br>
+                After an intensive week of training, I spent four days guiding my group through orientation activities, creating a supportive and engaging environment
+                <br><br>
+                This role required enthusiasm, strong organizational skills, and effective time management to keep events running smoothly and on schedule. It also allowed me to grow my leadership skills as I helped students navigate their transition into college life, set goals, and get connected with campus resources`;
 
 //NAVIGATION BAR COMPONENT
 class Navigation extends HTMLElement {
