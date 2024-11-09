@@ -5,7 +5,11 @@ const taDesc = `I have been a teaching assistant for COSC208 - Introduction to C
                 This position has helped me develop my communication skills, as I often have to explain difficult and complex technical concepts in simple or non-technical contexts
                 <br><br>
                 Furthermore, by continuously familiarizing and mastering the content of these courses in order to help students, I have a fantastic grasp on the C language, large-scale computer systems and programs, and different software analysis and testing principles`;
-const softEngDesc = `Soft Eng Description`;
+const softEngDesc = `For my Software Engineering course our capstone project is to create a functional website of our choosing
+                <br><br>
+                My group and I decided on an adaptation of GoodReads, and are currently building the site with a Ruby on Rails framework
+                <br><br>
+                While participating in the development itself, I have taken on a leadership role in our iteration meetings, ensuring that we properly move from one sprint to the next`;
 const raidRidesDesc = `In the summer of my sophomore year I co-developed a ride-share app for a student business venture at Colgate
                 <br><br>
                 I taught myself SQL, NoSQL, JavaScript and React Native before and as we developed the app, which relied on Google Cloud and Firebase for our backend
@@ -17,8 +21,20 @@ const websiteDesc = `I developed this website in HTML and CSS and initially set 
                 <br><br>
                 I have alsoleveraged custom HTML components for each page header and these modals in order to DRY out my code (ensuring that I won't repeat code)
                 `;
-const OCSDesc = `OCS Description`;
-const bRoomDesc = `The Boardroom Description`;
+const OCSDesc = `For a year before the program, I trained almost every day to reach the physical state required to be accepted and succeed at Officer Candidate School
+                <br><br>
+                At Officer Candidate School I adjusted to the fast-paced and aggressive environment in which myself and other candidates were under constant pressure and stress from superiors
+                <br><br>
+                I polished my organization and communication skills while at OCS. I was able to prioritize tasks under heavy time constraints and communicate quickly and effectively with fellow candidates
+                <br><br>
+                While I was unable to finish the program due to personal reasons, my time there was invaluable and I was able to mature and develop as a person and a leader`;
+const bRoomDesc = `Over the past three summers I have worked at a local restaurant, at first as a backserver but then promoted as an expediter
+                <br><br>
+                As an expediter I was the bridge between the chefs and the customer-facing staff. I ensured that the chefs were preparing the correct dishes on a satisfactory timeline, and that service staff properly delivered the food to the correct tables and seats
+                <br><br>
+                During busy nights I was able to hone my thinking and action under pressure, as I often had at least five different tasks at any given point, of which I had to understand their complex timeline in order to prioritize what I should do at any given point
+                <br><br>
+                Furthermore, I learned foster teamwork within a team of diverse backgrounds and perspectives. Some coworkers were 14 years old and others 60 years old, but we worked as an efficient team all the same`;
 const habitatDesc = `Habitat for Humanity Description`;
 const letProjDesc = `Letter Project Description`;
 const linkDesc = `Link Staff Description`;
