@@ -65,6 +65,10 @@ class Navigation extends HTMLElement {
                         <img class="img-fluid" style="max-width: 30px; max-height:30px;" src="images/linkedin.png" alt="Linkedin">
                     </a>
 
+                    <a class="navbar-brand" href="https://github.com/Rmullaney" target="_blank">
+                        <img class="img-fluid" style="max-width: 30px; max-height:30px;" src="images/github-mark.png" alt="GitHub">
+                    </a>
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
