@@ -94,6 +94,31 @@ class Navigation extends HTMLElement {
 
 customElements.define('nav-bar', Navigation);
 
+
+class Footer extends HTMLElement {
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
+        this.innerHTML = `
+            <div class="row-4" style="background-color: #505050; margin: 0">  
+                <div class="col-2">
+                    <a class="nav-link" href="index.html">Back to top</a>
+                    <a class="nav-link" href="about.html">About page</a>
+                    <a class="nav-link" href="experience.html">Experience page</a>
+                </div>
+                <div class="col-2">
+                    <a class="nav-link" href="https://www.linkedin.com/in/ronanmullaney" target="_blank">LinkedIn</a>
+                    <a class="nav-link" href="https://github.com/Rmullaney" target="_blank">GitHub</a>
+                </div>
+            </div>
+        `;
+    }
+}
+
+customElements.define('footer', Footer);
+
 //Experience page modal component
 class ModalComponent extends HTMLElement {
     constructor() {
