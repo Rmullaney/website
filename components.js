@@ -102,15 +102,17 @@ class Footer extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-            <div class="row" style="background-color: #505050; margin: 0">  
+            <div class="row" style="background-color: #003366; color: white; margin: 0; padding: 20px 0; text-align: center;">  
                 <div class="col-md-4">
-                    <a class="nav-link" href="index.html">Back to top</a>
-                    <a class="nav-link" href="about.html">About page</a>
-                    <a class="nav-link" href="experience.html">Experience page</a>
+                    <h5 style="font-weight: bold; margin-bottom: 15px;">Navigation</h5>
+                    <a class="nav-link" href="index.html" style="color: white; text-decoration: none; margin-bottom: 5px;">Back to top</a>
+                    <a class="nav-link" href="about.html" style="color: white; text-decoration: none; margin-bottom: 5px;">About page</a>
+                    <a class="nav-link" href="experience.html" style="color: white; text-decoration: none; margin-bottom: 5px;">Experience page</a>
                 </div>
                 <div class="col-md-4">
-                    <a class="nav-link" href="https://www.linkedin.com/in/ronanmullaney" target="_blank">LinkedIn</a>
-                    <a class="nav-link" href="https://github.com/Rmullaney" target="_blank">GitHub</a>
+                    <h5 style="font-weight: bold; margin-bottom: 15px;">Connect</h5>
+                    <a class="nav-link" href="https://www.linkedin.com/in/ronanmullaney" target="_blank" style="color: white; text-decoration: none; margin-bottom: 5px;">LinkedIn</a>
+                    <a class="nav-link" href="https://github.com/Rmullaney" target="_blank" style="color: white; text-decoration: none; margin-bottom: 5px;">GitHub</a>
                 </div>
             </div>
         `;
