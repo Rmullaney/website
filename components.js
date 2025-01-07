@@ -102,13 +102,13 @@ class Footer extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-            <div class="row-4" style="background-color: #505050; margin: 0">  
-                <div class="col-2">
+            <div class="row" style="background-color: #505050; margin: 0">  
+                <div class="col-md-4">
                     <a class="nav-link" href="index.html">Back to top</a>
                     <a class="nav-link" href="about.html">About page</a>
                     <a class="nav-link" href="experience.html">Experience page</a>
                 </div>
-                <div class="col-2">
+                <div class="col-md-4">
                     <a class="nav-link" href="https://www.linkedin.com/in/ronanmullaney" target="_blank">LinkedIn</a>
                     <a class="nav-link" href="https://github.com/Rmullaney" target="_blank">GitHub</a>
                 </div>
