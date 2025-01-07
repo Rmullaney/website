@@ -117,7 +117,7 @@ class Footer extends HTMLElement {
     }
 }
 
-customElements.define('footer', Footer);
+customElements.define('custom-footer', Footer);
 
 //Experience page modal component
 class ModalComponent extends HTMLElement {
