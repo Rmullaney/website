@@ -105,7 +105,7 @@ class Footer extends HTMLElement {
             <div class="row" style="background-color: #003366; color: white; margin: 0; padding: 20px 0; text-align: center;">  
                 <div class="col-md-4">
                     <h5 style="font-weight: bold; margin-bottom: 15px;">Navigation</h5>
-                    <a class="nav-link" href="index.html" style="color: white; text-decoration: none; margin-bottom: 5px;">Back to top</a>
+                    <a class="nav-link" href="index.html" style="color: white; text-decoration: none; margin-bottom: 5px;">Home page</a>
                     <a class="nav-link" href="about.html" style="color: white; text-decoration: none; margin-bottom: 5px;">About page</a>
                     <a class="nav-link" href="experience.html" style="color: white; text-decoration: none; margin-bottom: 5px;">Experience page</a>
                 </div>
