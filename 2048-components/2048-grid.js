@@ -8,29 +8,64 @@ class Grid extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <div class="container">
-                <div class="col">
-                    <tile-2048 value="2"></tile-2048>
-                    <tile-2048 value="4"></tile-2048>
-                    <tile-2048 value="0"></tile-2048>
-                    <tile-2048 value="8"></tile-2048>
+                <div class="row">
+                    <div class="col-3">
+                        <tile-2048 value="2"></tile-2048>
+                    </div>
+                    <div class="col-3">
+                        <tile-2048 value="4"></tile-2048>
+                    </div>
+                    <div class="col-3">
+                        <tile-2048 value="0"></tile-2048>
+                    </div>
+                    <div class="col-3">
+                        <tile-2048 value="8"></tile-2048>
+                    </div>
                 </div>
-                <div class="col">
-                    <tile-2048 value="2"></tile-2048>
-                    <tile-2048 value="4"></tile-2048>
-                    <tile-2048 value="0"></tile-2048>
-                    <tile-2048 value="8"></tile-2048>
+                
+                <div class="row">
+                    <div class="col-3">
+                        <tile-2048 value="2"></tile-2048>
+                    </div>
+                    <div class="col-3">
+                        <tile-2048 value="4"></tile-2048>
+                    </div>
+                    <div class="col-3">
+                        <tile-2048 value="0"></tile-2048>
+                    </div>
+                    <div class="col-3">
+                        <tile-2048 value="8"></tile-2048>
+                    </div>
                 </div>
-                <div class="col">
-                    <tile-2048 value="2"></tile-2048>
-                    <tile-2048 value="4"></tile-2048>
-                    <tile-2048 value="0"></tile-2048>
-                    <tile-2048 value="8"></tile-2048>
+
+                <div class="row">
+                    <div class="col-3">
+                        <tile-2048 value="2"></tile-2048>
+                    </div>
+                    <div class="col-3">
+                        <tile-2048 value="4"></tile-2048>
+                    </div>
+                    <div class="col-3">
+                        <tile-2048 value="0"></tile-2048>
+                    </div>
+                    <div class="col-3">
+                        <tile-2048 value="8"></tile-2048>
+                    </div>
                 </div>
-                <div class="col">
-                    <tile-2048 value="2"></tile-2048>
-                    <tile-2048 value="4"></tile-2048>
-                    <tile-2048 value="0"></tile-2048>
-                    <tile-2048 value="8"></tile-2048>
+
+                <div class="row">
+                    <div class="col-3">
+                        <tile-2048 value="2"></tile-2048>
+                    </div>
+                    <div class="col-3">
+                        <tile-2048 value="4"></tile-2048>
+                    </div>
+                    <div class="col-3">
+                        <tile-2048 value="0"></tile-2048>
+                    </div>
+                    <div class="col-3">
+                        <tile-2048 value="8"></tile-2048>
+                    </div>
                 </div>
             </div>
 
