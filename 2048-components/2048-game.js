@@ -1,4 +1,4 @@
-import './2048-grid';
+import 'website/2048-components/2048-grid';
 
 class Outer extends HTMLElement {
     constructor() {
