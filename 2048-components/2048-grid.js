@@ -7,9 +7,9 @@ class Grid extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-            <tile-2048></tile-2048>
+            <tile-2048 value="2"></tile-2048>
 
-            <tile-2048></tile-2048>
+            <tile-2048 value="4"></tile-2048>
         `;
     }
 }
