@@ -7,11 +7,11 @@ class Grid extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-            <2048-tile></2048-tile>
+            <tile-2048></tile-2048>
 
-            <2048-tile></2048-tile>
+            <tile-2048></tile-2048>
         `;
     }
 }
 
-customElements.define('2048-grid', Grid);
+customElements.define('grid-2048', Grid);

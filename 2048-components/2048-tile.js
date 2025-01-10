@@ -11,4 +11,4 @@ class Tile extends HTMLElement {
     }
 }
 
-customElements.define('2048-tile', Tile);
+customElements.define('tile-2048', Tile);

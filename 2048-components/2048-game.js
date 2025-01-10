@@ -7,9 +7,9 @@ class Outer extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-            <2048-grid></2048-grid>
+            <grid-2048></grid-2048>
         `;
     }
 }
 
-customElements.define('2048-game', Outer);
+customElements.define('game-2048', Outer);
