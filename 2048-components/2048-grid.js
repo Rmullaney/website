@@ -10,6 +10,8 @@ class Grid extends HTMLElement {
             <tile-2048 value="2"></tile-2048>
 
             <tile-2048 value="4"></tile-2048>
+
+            <tile-2048 value="0"></tile-2048>
         `;
     }
 }
