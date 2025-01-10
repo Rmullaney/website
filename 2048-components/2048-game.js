@@ -1,4 +1,4 @@
-import '2048-grid';
+import './2048-grid.js';
 
 class Outer extends HTMLElement {
     constructor() {
