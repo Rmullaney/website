@@ -1,6 +1,6 @@
-import 'website/2048-components/2048-game';
-import 'website/2048-components/2048-grid';
-import 'website/2048-components/2048-tile';
+import '2048-components/2048-game';
+import '2048-components/2048-grid';
+import '2048-components/2048-tile';
 
 
 document.addEventListener('DOMContentLoaded', () => {

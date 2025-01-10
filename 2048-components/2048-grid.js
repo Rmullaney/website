@@ -1,4 +1,4 @@
-import 'website-2048-components/2048-tile'
+import '2048-tile'
 
 class Grid extends HTMLElement {
     constructor() {
