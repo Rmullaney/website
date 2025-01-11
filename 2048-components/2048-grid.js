@@ -7,7 +7,7 @@ class Grid extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column" style="height:32vw; width:32vw;">
                 <div class="d-flex flex-row">
                     <tile-2048 id="tile-0" value="2"></tile-2048>
                     <tile-2048 id="tile-1" value="4"></tile-2048>

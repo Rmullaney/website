@@ -3,18 +3,25 @@
 @import url(./page-layouts/experience.css);
 
 .tile {
-    width: 80px;               /* Default size of the tile */
-    height: 80px;              /* Make the tile square */
+    width: 8vw;               /* Default size of the tile */
+    height: 8vw;              /* Make the tile square */
     display: flex;             /* Use flexbox to center content */
     align-items: center;       /* Vertically center the content */
     justify-content: center;   /* Horizontally center the content */
-    font-size: 36px;           /* Font size for the number inside */
+    font-size: 3vw;           /* Font size for the number inside */
     font-weight: bold;         /* Make the text bold */
     border-radius: 10px;       /* Rounded corners */
     color: #100e0e;               /* Text color */
     background-color: #eee;    /* Default background color for empty tile */
     box-shadow: 0 0 10px rgba(0,0,0,0.2);  /* Slight shadow for 3D effect */
     transition: all 0.2s ease; /* Smooth transition when size or color changes */
+  }
+
+  grid-2048 {
+    max-width: 32vw;
+    max-height: 32vw;
+    margin: 0;
+    padding: 0;
   }
   
   /* Style for the tile numbers (with dynamic color depending on value) */
