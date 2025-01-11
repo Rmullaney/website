@@ -1,5 +1,4 @@
 import './2048-game.js';
-import './2048-grid.js';
 import './2048-tile.js';
 
 
