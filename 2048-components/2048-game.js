@@ -6,6 +6,9 @@ class Outer extends HTMLElement {
     }
 
     connectedCallback() {
+        window.addEventListener("keydown", function onEvent(event) {
+            console.log(event.key)
+        });
         this.innerHTML = `
             <div class="justify-content-center d-flex flex-column" style="margin:0; padding:0;">
                 <br>
