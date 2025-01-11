@@ -6,16 +6,24 @@ class Outer extends HTMLElement {
     }
 
     //sets gridArray before functionality. 
+    //left-shift oriented is default
     executeMove(direction) {
-        gridArray = [];
+        gridArray = this.getStandardGrid();
         switch (direction) {
             case "Up":
+                //rotateRight90
+                gridArray = this.rotate90Right(gridArray);
                 break;
             case "Down":
+                //rotateRight90 + flipRows
+                gridArray = this.flipRows(this.rotate90Right(gridArray));
                 break;
             case "Left":
+                //nothing
                 break;
             case "Right":
+                //flipRows
+                gridArray = this.flipRows(gridArray);
                 break;
             default:
                 console.log("Something's very wrong in 2048-game/executeMove");
@@ -24,13 +32,60 @@ class Outer extends HTMLElement {
         this.runShifts(gridArray, direction);
     }
 
+    //flipRows
+    flipRows(gridArray) {
+
+    }
+
+    //rotate90degRight
+    rotate90Right(gridArray) {
+
+    }
+
+    //gets the values from the current grid in standard 0-15 order
+    getStandardGrid() {
+        array = [];
+        for (let i=0; i<16; i++) {
+            array.push(document.querySelector(`#tile-${i}`).getAttribute('value'));
+        }
+        return array;
+    }
+
+    //executes the actual shifts of values into new values
     runShifts(gridArray, direction) {
         //run shifts
         this.setElementValues(gridArray, direction);
     }
 
+    //puts the new elements back into the actual grid
     setElementValues(gridArray, direction) {
-        //set the html elements with gridArray
+        //restore grid direction
+        switch (direction) {
+            case "Up":
+                //rotateRight90 x 3
+                for (let i = 0; i<3; i++){
+                    gridArray = this.rotate90Right(gridArray);
+                }
+                break;
+            case "Down":
+                //flipRows + (rotateRight90 x 3)
+                gridArray = this.flipRows(gridArray);
+                for (let i = 0; i<3; i++){
+                    gridArray = this.rotate90Right(gridArray);
+                }
+                break;
+            case "Left":
+                //nothing
+                break;
+            case "Right":
+                gridArray = this.flipRows(gridArray);
+                //flipRows
+                break;
+            default:
+                console.log("Something's very wrong in 2048-game/executeMove");
+                break;
+        }
+        //replace values
     }
 
     connectedCallback() {
