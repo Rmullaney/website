@@ -5,9 +5,53 @@ class Outer extends HTMLElement {
         super();
     }
 
+    //sets gridArray before functionality. 
+    executeMove(direction) {
+        gridArray = [];
+        switch (direction) {
+            case "Up":
+                break;
+            case "Down":
+                break;
+            case "Left":
+                break;
+            case "Right":
+                break;
+            default:
+                console.log("Something's very wrong in 2048-game/executeMove");
+                break;
+        }
+        this.runShifts(gridArray, direction);
+    }
+
+    runShifts(gridArray, direction) {
+        //run shifts
+        this.setElementValues(gridArray, direction);
+    }
+
+    setElementValues(gridArray, direction) {
+        //set the html elements with gridArray
+    }
+
     connectedCallback() {
         window.addEventListener("keydown", function onEvent(event) {
             console.log(event.key)
+            switch (event.key) {
+                case "ArrowUp":
+                    this.executeMove("Up");
+                    break;
+                case "ArrowDown":
+                    this.executeMove("Down");
+                    break;
+                case "ArrowLeft":
+                    this.executeMove("Left");
+                    break;
+                case "ArrowRight":
+                    this.executeMove("Right");
+                    break;
+                default:
+                    break;
+            }
         });
         this.innerHTML = `
             <div class="justify-content-center d-flex flex-column" style="margin:0; padding:0;">
