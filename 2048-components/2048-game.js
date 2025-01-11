@@ -8,7 +8,7 @@ class Outer extends HTMLElement {
     //sets gridArray before functionality. 
     //left-shift oriented is default
     executeMove(direction) {
-        gridArray = this.getStandardGrid();
+        let gridArray = this.getStandardGrid();
         switch (direction) {
             case "Up":
                 //rotateRight90
@@ -44,7 +44,7 @@ class Outer extends HTMLElement {
 
     //gets the values from the current grid in standard 0-15 order
     getStandardGrid() {
-        array = [];
+        let array = [];
         for (let i=0; i<16; i++) {
             array.push(document.querySelector(`#tile-${i}`).getAttribute('value'));
         }
@@ -54,6 +54,46 @@ class Outer extends HTMLElement {
     //executes the actual shifts of values into new values
     runShifts(gridArray, direction) {
         //run shifts
+        for (let i=0;i<4; i++){
+            //get each sub-array
+            let tempArray = gridArray.slice((i*4), (i*4) + 4);
+
+            //remove zeroes
+            for (let i=3; i>=0; i--){
+                if (tempArray[i] == 0){
+                    tempArray.splice(i, 1);
+                }
+            }
+
+            //cases for tempArray size
+            switch (tempArray.length){
+                case (0):
+                    tempArray = ['0', '0', '0', '0'];
+                    break;
+                case (1):
+                    tempArray.push('0');
+                    tempArray.push('0');
+                    tempArray.push('0');
+                    break;
+                case (2):
+                    if (tempArray[0] == tempArray[1]) {
+                        tempArray.splice(1, 1);
+                        tempArray[0] = String(tempArray[0] * 2);
+                        tempArray.push('0');
+                        tempArray.push('0');
+                        tempArray.push('0');
+                    } else {
+                        tempArray.push('0');
+                        tempArray.push('0');
+                    }
+                case (3):
+                    if (tempArray[0] == tempArray[1]) {
+                        tempArray.splice(1, 1);
+                        tempArray[0] = String(tempArray[0] * 2);
+                        tempArray
+                    }
+            }
+        }
         this.setElementValues(gridArray, direction);
     }
 
@@ -86,6 +126,9 @@ class Outer extends HTMLElement {
                 break;
         }
         //replace values
+        for (let i=0; i<16; i++){
+            document.querySelector(`#tile-${i}`).setAttribute('value', gridArray[i])
+        }
     }
 
     connectedCallback() {
