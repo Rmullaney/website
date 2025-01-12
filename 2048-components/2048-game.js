@@ -3,12 +3,14 @@ import './2048-tile.js'
 class Outer extends HTMLElement {
     constructor() {
         super();
+        this.currentGrid = -1;
     }
 
     //sets gridArray before functionality. 
     //left-shift oriented is default
     executeMove(direction) {
         let gridArray = this.getStandardGrid();
+        this.currentGrid = gridArray;
         switch (direction) {
             case "Up":
                 //rotateRight90
@@ -162,12 +164,17 @@ class Outer extends HTMLElement {
                 break;
         }
         console.log("setElementValues just reshifted the grid into the following array for replacement: " + gridArray);
+
         //replace values
         for (let i=0; i<16; i++){
             document.querySelector(`#tile-${i}`).setAttribute('value', gridArray[i])
         }
-
-        this.addNewTile();
+        
+        //add new tile if a board change occured (for any valid move. invalid moves do not yield board change)
+        if (gridArray != this.currentGrid){
+            this.addNewTile();
+        }
+        
     }
 
     addNewTile() {
