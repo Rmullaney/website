@@ -1,3 +1,37 @@
 @import url(./page-layouts/homePage.css);
 @import url(./page-layouts/about.css);
 @import url(./page-layouts/experience.css);
+
+.tile {
+    width: 8vw;               /* Default size of the tile */
+    height: 8vw;              /* Make the tile square */
+    display: flex;             /* Use flexbox to center content */
+    align-items: center;       /* Vertically center the content */
+    justify-content: center;   /* Horizontally center the content */
+    font-size: 3vw;           /* Font size for the number inside */
+    font-weight: bold;         /* Make the text bold */
+    border-radius: 10px;       /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);  /* Slight shadow for 3D effect */
+    transition: all 0.2s ease; /* Smooth transition when size or color changes */
+  }
+
+  grid-2048 {
+    max-width: 32vw;
+    max-height: 32vw;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style for the tile numbers (with dynamic color depending on value) */
+  .tile[value="2"] { background-color: #eee4da; color: #776e65; }
+  .tile[value="4"] { background-color: #ede0c8; color: #776e65; }
+  .tile[value="8"] { background-color: #f2b179; color: #f9f6f2; }
+  .tile[value="16"] { background-color: #f59563; color: #f9f6f2; }
+  .tile[value="32"] { background-color: #f67c5f; color: #f9f6f2; }
+  .tile[value="64"] { background-color: #f65e3b; color: #f9f6f2; }
+  .tile[value="128"] { background-color: #edcf72; color: #f9f6f2; }
+  .tile[value="256"] { background-color: #edcc61; color: #f9f6f2; }
+  .tile[value="512"] { background-color: #edc850; color: #f9f6f2; }
+  .tile[value="1024"] { background-color: #edc53f; color: #f9f6f2; }
+  .tile[value="2048"] { background-color: #edc22e; color: #f9f6f2; }
+  
