@@ -148,7 +148,7 @@ class Outer extends HTMLElement {
 
 
         //replace values
-        for (let i=0; i<16; i++){
+        for (let i=0; i<(this.n * this.n); i++){
             document.querySelector(`#tile-${i}`).setAttribute('value', gridArray[i])
         }
         
@@ -157,7 +157,7 @@ class Outer extends HTMLElement {
             this.addNewTile();
         } else {
             let emptyArray = [];
-            for (let i = 0; i < 16; i++){
+            for (let i = 0; i < (this.n * this.n); i++){
                 if (document.querySelector(`#tile-${i}`).getAttribute('value') == '0'){
                     emptyArray.push(i);
                 }
@@ -190,7 +190,7 @@ class Outer extends HTMLElement {
     addNewTile() {
         //get empty tiles
         let emptyArray = [];
-        for (let i = 0; i < 16; i++){
+        for (let i = 0; i < (this.n * this.n); i++){
             if (document.querySelector(`#tile-${i}`).getAttribute('value') == '0'){
                 emptyArray.push(i);
             }
