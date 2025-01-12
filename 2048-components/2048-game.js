@@ -65,36 +65,32 @@ class Outer extends HTMLElement {
                 }
             }
 
-            //cases for tempArray size
-            switch (tempArray.length){
-                case (0):
-                    tempArray = ['0', '0', '0', '0'];
-                    break;
-                case (1):
-                    tempArray.push('0');
-                    tempArray.push('0');
-                    tempArray.push('0');
-                    break;
-                case (2):
-                    if (tempArray[0] == tempArray[1]) {
-                        tempArray.splice(1, 1);
-                        tempArray[0] = String(tempArray[0] * 2);
-                        tempArray.push('0');
-                        tempArray.push('0');
-                        tempArray.push('0');
-                    } else {
-                        tempArray.push('0');
-                        tempArray.push('0');
-                    }
-                case (3):
-                    if (tempArray[0] == tempArray[1]) {
-                        tempArray.splice(1, 1);
-                        tempArray[0] = String(tempArray[0] * 2);
-                        tempArray
-                    }
+            //run shifts
+            tempArray = this.shiftRecurse(tempArray);
+
+            //remove leading zeroes
+            while (tempArray.length > 0 && tempArray[0] == '0'){
+                tempArray.splice(0, 1);
+            }
+
+            //fill if necessary
+            while (tempArray.length < 4){
+                tempArray.push('0');
             }
         }
         this.setElementValues(gridArray, direction);
+    }
+
+    shiftRecurse(array) {
+        if (array.length < 2){
+            return array;
+        } else {
+            if (array[0] == array[1]){
+                return [String(array[0]*2)].concat(this.shiftRecurse(array.splice(0, 2)));
+            } else {
+                return [array[0]].concat(this.shiftRecurse(array.splice(0, 1)));
+            }
+        }
     }
 
     //puts the new elements back into the actual grid
