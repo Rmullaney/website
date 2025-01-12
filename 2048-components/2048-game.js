@@ -180,7 +180,12 @@ class Outer extends HTMLElement {
                 }
             }
             if (emptyArray.length == 0){
-                location.reload();
+                let playAgain = confirm("Game Over! Play Again?");
+                if (playAgain) {
+                    window.location.href = '/game.html';
+                } else {
+                    window.location.href = '/index.html';
+                }
             }
         }
         
