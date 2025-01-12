@@ -10,7 +10,8 @@ class Outer extends HTMLElement {
     //left-shift oriented is default
     executeMove(direction) {
         let gridArray = this.getStandardGrid();
-        this.currentGrid = gridArray;
+        this.currentGrid = [...gridArray];
+        console.log("currGrid at start of execution: " + this.currentGrid);
         switch (direction) {
             case "Up":
                 //rotateRight90
@@ -171,10 +172,25 @@ class Outer extends HTMLElement {
         }
         
         //add new tile if a board change occured (for any valid move. invalid moves do not yield board change)
-        if (gridArray != this.currentGrid){
+        console.log("gridArray: " + gridArray);
+        console.log("this.currentGrid: " + this.currentGrid);
+        if (!this.compareArrays(gridArray, this.currentGrid)){
             this.addNewTile();
         }
         
+    }
+
+    compareArrays(arr1, arr2) {
+        if (arr1.length == arr2.length){
+            for (let i=0; i<arr1.length; i++){
+                if (arr1[i] != arr2[i]){
+                    return false;
+                }
+            }
+            return true;
+        } else {
+            return false;
+        }
     }
 
     addNewTile() {
