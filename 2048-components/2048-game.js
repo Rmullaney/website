@@ -15,11 +15,13 @@ class Outer extends HTMLElement {
         switch (direction) {
             case "Up":
                 //rotateRight90
-                gridArray = this.rotate90Right(gridArray);
+                for (let i=0; i<3; i++){
+                    gridArray = this.rotate90Right(gridArray);
+                }
                 break;
             case "Down":
                 //rotateRight90 + flipRows
-                gridArray = this.flipRows(this.rotate90Right(gridArray));
+                gridArray = this.rotate90Right(gridArray);
                 break;
             case "Left":
                 //nothing
@@ -145,7 +147,6 @@ class Outer extends HTMLElement {
             case "Up":
                 //rotateRight90 + fliprows
                 gridArray = this.rotate90Right(gridArray);
-                gridArray = this.flipRows(gridArray);
                 break;
             case "Down":
                 //(rotateRight90 x 3)
