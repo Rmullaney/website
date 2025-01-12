@@ -29,6 +29,7 @@ class Outer extends HTMLElement {
                 console.log("Something's very wrong in 2048-game/executeMove");
                 break;
         }
+        console.log("executeMove just shifted this array: " + gridArray);
         this.runShifts(gridArray, direction);
     }
 
@@ -90,9 +91,9 @@ class Outer extends HTMLElement {
             let tempArray = gridArray.slice((i*4), (i*4) + 4);
 
             //remove zeroes
-            for (let i=3; i>=0; i--){
-                if (tempArray[i] == 0){
-                    tempArray.splice(i, 1);
+            for (let k=3; k>=0; k--){
+                if (tempArray[k] == 0){
+                    tempArray.splice(k, 1);
                 }
             }
 
@@ -108,7 +109,13 @@ class Outer extends HTMLElement {
             while (tempArray.length < 4){
                 tempArray.push('0');
             }
+
+            //put new elements back in gridArray
+            for (let j=0; j<4; j++){
+                gridArray[(4*i) + j] = tempArray[j];
+            }
         }
+        console.log("runshifts just ran all the logic and produced this array: " + gridArray);
         this.setElementValues(gridArray, direction);
     }
 
@@ -117,9 +124,13 @@ class Outer extends HTMLElement {
             return array;
         } else {
             if (array[0] == array[1]){
-                return [String(array[0]*2)].concat(this.shiftRecurse(array.splice(0, 2)));
+                let item = array[0];
+                array.splice(0, 2);
+                return [String(item*2)].concat(this.shiftRecurse(array));
             } else {
-                return [array[0]].concat(this.shiftRecurse(array.splice(0, 1)));
+                let item = array[0];
+                array.splice(0, 1);
+                return [item].concat(this.shiftRecurse(array));
             }
         }
     }
@@ -129,14 +140,12 @@ class Outer extends HTMLElement {
         //restore grid direction
         switch (direction) {
             case "Up":
-                //rotateRight90 x 3
-                for (let i = 0; i<3; i++){
-                    gridArray = this.rotate90Right(gridArray);
-                }
+                //rotateRight90 + fliprows
+                gridArray = this.rotate90Right(gridArray);
+                gridArray = this.flipRows(gridArray);
                 break;
             case "Down":
-                //flipRows + (rotateRight90 x 3)
-                gridArray = this.flipRows(gridArray);
+                //(rotateRight90 x 3)
                 for (let i = 0; i<3; i++){
                     gridArray = this.rotate90Right(gridArray);
                 }
@@ -152,6 +161,7 @@ class Outer extends HTMLElement {
                 console.log("Something's very wrong in 2048-game/executeMove");
                 break;
         }
+        console.log("setElementValues just reshifted the grid into the following array for replacement: " + gridArray);
         //replace values
         for (let i=0; i<16; i++){
             document.querySelector(`#tile-${i}`).setAttribute('value', gridArray[i])
@@ -159,7 +169,7 @@ class Outer extends HTMLElement {
     }
 
     connectedCallback() {
-        window.addEventListener("keydown", function onEvent(event) {
+        window.addEventListener("keydown", (event) => {
             console.log(event.key)
             switch (event.key) {
                 case "ArrowUp":
