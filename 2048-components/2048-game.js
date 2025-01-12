@@ -34,12 +34,43 @@ class Outer extends HTMLElement {
 
     //flipRows
     flipRows(gridArray) {
+        let temp = -1;
+        for (let i=0; i<4; i++){
+            let base = 4 * i;
 
+            //first swap
+            temp = gridArray[base];
+            gridArray[base] = gridArray[base+3];
+            gridArray[base+3] = temp;
+
+            //second swap
+            temp = gridArray[base+1];
+            gridArray[base+1] = gridArray[base+2];
+            gridArray[base+2] = temp;
+        }
+        return gridArray;
     }
 
     //rotate90degRight
     rotate90Right(gridArray) {
-
+        let newArray = [];
+        newArray.push(gridArray[12]);
+        newArray.push(gridArray[8]);
+        newArray.push(gridArray[4]);
+        newArray.push(gridArray[0]);
+        newArray.push(gridArray[13]);
+        newArray.push(gridArray[9]);
+        newArray.push(gridArray[5]);
+        newArray.push(gridArray[1]);
+        newArray.push(gridArray[14]);
+        newArray.push(gridArray[10]);
+        newArray.push(gridArray[6]);
+        newArray.push(gridArray[2]);
+        newArray.push(gridArray[15]);
+        newArray.push(gridArray[11]);
+        newArray.push(gridArray[7]);
+        newArray.push(gridArray[3]);
+        return newArray;
     }
 
     //gets the values from the current grid in standard 0-15 order
