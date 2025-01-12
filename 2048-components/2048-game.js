@@ -4,6 +4,7 @@ class Outer extends HTMLElement {
     constructor() {
         super();
         this.currentGrid = -1;
+        this.n = 4;
     }
 
     //sets gridArray before functionality. 
@@ -36,24 +37,6 @@ class Outer extends HTMLElement {
         this.runShifts(gridArray, direction);
     }
 
-    //flipRows
-    flipRows(gridArray) {
-        let temp = -1;
-        for (let i=0; i<4; i++){
-            let base = 4 * i;
-
-            //first swap
-            temp = gridArray[base];
-            gridArray[base] = gridArray[base+3];
-            gridArray[base+3] = temp;
-
-            //second swap
-            temp = gridArray[base+1];
-            gridArray[base+1] = gridArray[base+2];
-            gridArray[base+2] = temp;
-        }
-        return gridArray;
-    }
 
     //rotate90degRight
     rotate90Right(gridArray) {
@@ -80,7 +63,7 @@ class Outer extends HTMLElement {
     //gets the values from the current grid in standard 0-15 order
     getStandardGrid() {
         let array = [];
-        for (let i=0; i<16; i++) {
+        for (let i=0; i<(this.n * this.n); i++) {
             array.push(document.querySelector(`#tile-${i}`).getAttribute('value'));
         }
         return array;
@@ -89,12 +72,12 @@ class Outer extends HTMLElement {
     //executes the actual shifts of values into new values
     runShifts(gridArray, direction) {
         //run shifts
-        for (let i=0;i<4; i++){
+        for (let i=0;i<this.n; i++){
             //get each sub-array
-            let tempArray = gridArray.slice((i*4), (i*4) + 4);
+            let tempArray = gridArray.slice((i*this.n), (i*this.n) + this.n);
 
             //remove zeroes
-            for (let k=3; k>=0; k--){
+            for (let k=(this.n-1); k>=0; k--){
                 if (tempArray[k] == 0){
                     tempArray.splice(k, 1);
                 }
@@ -109,13 +92,13 @@ class Outer extends HTMLElement {
             }
 
             //fill if necessary
-            while (tempArray.length < 4){
+            while (tempArray.length < this.n){
                 tempArray.push('0');
             }
 
             //put new elements back in gridArray
-            for (let j=0; j<4; j++){
-                gridArray[(4*i) + j] = tempArray[j];
+            for (let j=0; j<this.n; j++){
+                gridArray[(this.n*i) + j] = tempArray[j];
             }
         }
         this.setElementValues(gridArray, direction);
