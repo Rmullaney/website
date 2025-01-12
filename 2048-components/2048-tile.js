@@ -19,9 +19,9 @@ class Tile extends HTMLElement {
 
     render() {
         if (this._value != 0){
-            this.innerHTML = `<div class="tile">${this._value}</div>`;
+            this.innerHTML = `<div>${this._value}</div>`;
         } else {
-            this.innerHTML = `<div class="tile"></div>`
+            this.innerHTML = `<div></div>`
         }
 
         
