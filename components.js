@@ -5,7 +5,7 @@ const taDesc = `I have been a teaching assistant for COSC208 - Introduction to C
                 This position has helped me develop my communication skills, as I often have to explain difficult and complex technical concepts in simple or non-technical contexts
                 <br><br>
                 Furthermore, by continuously familiarizing and mastering the content of these courses in order to help students, I have a fantastic grasp on the C language, large-scale computer systems and programs, and different software analysis and testing principles`;
-const softEngDesc = `For my Software Engineering course our capstone project is to create a functional website of our choosing
+const softEngDesc = `For my Software Engineering course, our capstone project is to create a functional website of our choosing
                 <br><br>
                 My group and I decided on an adaptation of GoodReads, and are currently building the site with a Ruby on Rails framework
                 <br><br>
