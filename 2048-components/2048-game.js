@@ -11,7 +11,6 @@ class Outer extends HTMLElement {
     executeMove(direction) {
         let gridArray = this.getStandardGrid();
         this.currentGrid = [...gridArray];
-        console.log("currGrid at start of execution: " + this.currentGrid);
         switch (direction) {
             case "Up":
                 //rotateRight90
@@ -34,7 +33,6 @@ class Outer extends HTMLElement {
                 console.log("Something's very wrong in 2048-game/executeMove");
                 break;
         }
-        console.log("executeMove just shifted this array: " + gridArray);
         this.runShifts(gridArray, direction);
     }
 
@@ -120,7 +118,6 @@ class Outer extends HTMLElement {
                 gridArray[(4*i) + j] = tempArray[j];
             }
         }
-        console.log("runshifts just ran all the logic and produced this array: " + gridArray);
         this.setElementValues(gridArray, direction);
     }
 
@@ -165,7 +162,7 @@ class Outer extends HTMLElement {
                 console.log("Something's very wrong in 2048-game/executeMove");
                 break;
         }
-        console.log("setElementValues just reshifted the grid into the following array for replacement: " + gridArray);
+
 
         //replace values
         for (let i=0; i<16; i++){
@@ -173,10 +170,18 @@ class Outer extends HTMLElement {
         }
         
         //add new tile if a board change occured (for any valid move. invalid moves do not yield board change)
-        console.log("gridArray: " + gridArray);
-        console.log("this.currentGrid: " + this.currentGrid);
         if (!this.compareArrays(gridArray, this.currentGrid)){
             this.addNewTile();
+        } else {
+            let emptyArray = [];
+            for (let i = 0; i < 16; i++){
+                if (document.querySelector(`#tile-${i}`).getAttribute('value') == '0'){
+                    emptyArray.push(i);
+                }
+            }
+            if (emptyArray.length == 0){
+                location.reload();
+            }
         }
         
     }
@@ -214,7 +219,7 @@ class Outer extends HTMLElement {
 
     connectedCallback() {
         window.addEventListener("keydown", (event) => {
-            console.log(event.key)
+            event.preventDefault();
             switch (event.key) {
                 case "ArrowUp":
                     this.executeMove("Up");
@@ -235,7 +240,6 @@ class Outer extends HTMLElement {
 
         this.innerHTML = `
             <div class="justify-content-center d-flex flex-column" style="margin:0; padding:0;">
-                <br>
                 <br>
                 <div class="d-flex justify-content-center">
                     <div class="d-flex flex-column" style="height:32vw; width:32vw;">

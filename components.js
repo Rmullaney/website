@@ -85,7 +85,7 @@ class Navigation extends HTMLElement {
                                 <a class="nav-link" href="experience.html">My Experience</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="game.html">Game Page</a>
+                                <a class="nav-link" href="game.html">Play 2048</a>
                             </li>
                         </ul>
                     </div>
