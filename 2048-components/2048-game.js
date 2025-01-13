@@ -38,6 +38,25 @@ class Outer extends HTMLElement {
     }
 
 
+    //flipRows
+    flipRows(gridArray) {
+        let temp = -1;
+        for (let i=0; i<4; i++){
+            let base = 4 * i;
+
+            //first swap
+            temp = gridArray[base];
+            gridArray[base] = gridArray[base+3];
+            gridArray[base+3] = temp;
+
+            //second swap
+            temp = gridArray[base+1];
+            gridArray[base+1] = gridArray[base+2];
+            gridArray[base+2] = temp;
+        }
+        return gridArray;
+    }
+
     //rotate90degRight
     rotate90Right(gridArray) {
         let newArray = [];
@@ -229,7 +248,7 @@ class Outer extends HTMLElement {
         this.innerHTML = `
             <div class="justify-content-center d-flex flex-column" style="margin:0; padding:0;">
                 <br>
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center flex-row">
                     <div class="d-flex flex-column" style="height:32vw; width:32vw;">
                         <div class="d-flex flex-row">
                             <tile-2048 class="tile" id="tile-0" value="0"></tile-2048>
