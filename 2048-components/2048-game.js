@@ -7,6 +7,25 @@ class Outer extends HTMLElement {
         this.n = 4;
     }
 
+    //flipRows
+    flipRows(gridArray) {
+        let temp = -1;
+        for (let i=0; i<4; i++){
+            let base = 4 * i;
+
+            //first swap
+            temp = gridArray[base];
+            gridArray[base] = gridArray[base+3];
+            gridArray[base+3] = temp;
+
+            //second swap
+            temp = gridArray[base+1];
+            gridArray[base+1] = gridArray[base+2];
+            gridArray[base+2] = temp;
+        }
+        return gridArray;
+    }
+
     //sets gridArray before functionality. 
     //left-shift oriented is default
     executeMove(direction) {
@@ -37,25 +56,6 @@ class Outer extends HTMLElement {
         this.runShifts(gridArray, direction);
     }
 
-
-    //flipRows
-    flipRows(gridArray) {
-        let temp = -1;
-        for (let i=0; i<4; i++){
-            let base = 4 * i;
-
-            //first swap
-            temp = gridArray[base];
-            gridArray[base] = gridArray[base+3];
-            gridArray[base+3] = temp;
-
-            //second swap
-            temp = gridArray[base+1];
-            gridArray[base+1] = gridArray[base+2];
-            gridArray[base+2] = temp;
-        }
-        return gridArray;
-    }
 
     //rotate90degRight
     rotate90Right(gridArray) {
