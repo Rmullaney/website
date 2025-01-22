@@ -1,15 +1,16 @@
-const taDesc = `I have been a teaching assistant for COSC208 - Introduction to Computer Systems - for two semesters and a teaching assistant for COSC215 - Software Analysis and Testing - for one semester 
+const taDesc = `I have been a teaching assistant for COSC208 - Introduction to Computer Systems - for three semesters and was a teaching assistant for COSC215 - Software Analysis and Testing - for one semester 
                 <br><br>
                 My duties include assisting students with questions and concepts during lab periods while also providing an open office hour where I answer questions about class material and assist students with course projects
                 <br><br>
                 This position has helped me develop my communication skills, as I often have to explain difficult and complex technical concepts in simple or non-technical contexts
                 <br><br>
                 Furthermore, by continuously familiarizing and mastering the content of these courses in order to help students, I have a fantastic grasp on the C language, large-scale computer systems and programs, and different software analysis and testing principles`;
-const softEngDesc = `For my Software Engineering course our capstone project is to create a functional website of our choosing
+const softEngDesc = `For my Software Engineering course, our capstone project was to create a functional website of our choosing
                 <br><br>
-                My group and I decided on an adaptation of GoodReads, and are currently building the site with a Ruby on Rails framework
+                My group and I decided on an adaptation of GoodReads, and have built the site with a Ruby on Rails framework
                 <br><br>
-                While participating in the development itself, I have taken on a leadership role in our iteration meetings, ensuring that we properly move from one sprint to the next`;
+                While participating in the development itself, I have taken on a leadership role in our iteration meetings, ensuring that we properly move from one sprint to the next
+                <br><br>`;
 const raidRidesDesc = `In the summer of my sophomore year I co-developed a ride-share app for a student business venture at Colgate
                 <br><br>
                 I taught myself SQL, NoSQL, JavaScript and React Native before and as we developed the app, which relied on Google Cloud and Firebase for our backend
@@ -20,6 +21,8 @@ const raidRidesDesc = `In the summer of my sophomore year I co-developed a ride-
 const websiteDesc = `I developed this website in HTML and CSS and initially set out to create all of the CSS myself. However, in realizing how daunting this task is, I began to utilize Bootstrap which made my visuals far cleaner than they were before
                 <br><br>
                 I have alsoleveraged custom HTML components for each page header and these modals in order to DRY out my code (ensuring that I won't repeat code)
+                <br><br>
+                You can also check out the game tab where I emulated the game 2048 with custom Javascript components!
                 `;
 const OCSDesc = `For a year before the program, I trained almost every day to reach the physical state required to be accepted and succeed at Officer Candidate School
                 <br><br>
@@ -35,11 +38,11 @@ const bRoomDesc = `Over the past three summers I have worked at a local restaura
                 During busy nights I was able to hone my thinking and action under pressure, as I often had at least five different tasks at any given point, of which I had to understand their complex timeline in order to prioritize what I should do at any given point
                 <br><br>
                 Furthermore, I learned foster teamwork within a team of diverse backgrounds and perspectives. Some coworkers were 14 years old and others 60 years old, but we worked as an efficient team all the same`;
-const habitatDesc = `This winter, I will be joining a week-long Habitat for Humanity service trip, where I'll work alongside other volunteers to help build and improve homes for families in need
+const habitatDesc = `This past winter, I was a part of a week-long Habitat for Humanity service trip, where I worked alongside other volunteers to help build and improve homes for families in need
                 <br><br>
-                Throughout the trip, I will contribute to construction efforts and engage directly with the local community, helping to create affordable housing and strengthen neighborhoods
+                Throughout the trip, I directly contributed to construction efforts on a new home's fence and engaged with the local community, learning about how my efforts on the new home contributed towards creating a new home for a family in need
                 <br><br>
-                I am excited for the chance to gain hands-on experience, learn more about housing challenges, and make a lasting impact by supporting Habitat for Humanity's mission of building a world where everyone has a decent place to live.`;
+                It was an amazing experience; I got to gain hands-on experience, learn more about housing challenges, and make a lasting impact by supporting Habitat for Humanity's mission of building a world where everyone has a decent place to live.`;
 const letProjDesc = `As part of The Letter Project on campus, I have the unique opportunity to be a pen-pal to someone in jail, offering friendship and support through consistent correspondence
                 <br><br>
                 Through each letter, I hope to provide a connection to the outside world and offer encouragement. This experience has taught me the importance of empathy, communication, and building trust, even across challenging circumstances, and has deepened my understanding of resilience and the value of human connection.`;
